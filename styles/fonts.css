@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'FedraSansPro-BoldLF';
+	src: url('../fonts/FedraSansPro-BoldLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-BoldLF.woff') format('woff'), url('../fonts/FedraSansPro-BoldLF.ttf') format('truetype'), url('../fonts/FedraSansPro-BoldLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-BookLF';
+	src: url('../fonts/FedraSansPro-BookLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-BookLF.woff') format('woff'), url('../fonts/FedraSansPro-BookLF.ttf') format('truetype'), url('../fonts/FedraSansPro-BookLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-DemiLF';
+	src: url('../fonts/FedraSansPro-DemiLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-DemiLF.woff') format('woff'), url('../fonts/FedraSansPro-DemiLF.ttf') format('truetype'), url('../fonts/FedraSansPro-DemiLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-LightLF';
+	src: url('../fonts/FedraSansPro-LightLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-LightLF.woff') format('woff'), url('../fonts/FedraSansPro-LightLF.ttf') format('truetype'), url('../fonts/FedraSansPro-LightLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'FedraSansPro-MediumLF';
+	src: url('../fonts/FedraSansPro-MediumLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-MediumLF.woff') format('woff'), url('../fonts/FedraSansPro-MediumLF.ttf') format('truetype'), url('../fonts/FedraSansPro-MediumLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* ITALIC */
+/*
+@font-face {
+	font-family: 'FedraSansPro-BoldItalicLF';
+	src: url('../fonts/FedraSansPro-BoldItalicLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-BoldItalicLF.woff') format('woff'), url('../fonts/FedraSansPro-BoldItalicLF.ttf') format('truetype'), url('../fonts/FedraSansPro-BoldItalicLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-MediumItalicLF';
+	src: url('../fonts/FedraSansPro-MediumItalicLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-MediumItalicLF.woff') format('woff'), url('../fonts/FedraSansPro-MediumItalicLF.ttf') format('truetype'), url('../fonts/FedraSansPro-MediumItalicLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-LightItalicLF';
+	src: url('../fonts/FedraSansPro-LightItalicLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-LightItalicLF.woff') format('woff'), url('../fonts/FedraSansPro-LightItalicLF.ttf') format('truetype'), url('../fonts/FedraSansPro-LightItalicLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-DemiItalicLF';
+	src: url('../fonts/FedraSansPro-DemiItalicLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-DemiItalicLF.woff') format('woff'), url('../fonts/FedraSansPro-DemiItalicLF.ttf') format('truetype'), url('../fonts/FedraSansPro-DemiItalicLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FedraSansPro-BookItalicLF';
+	src: url('../fonts/FedraSansPro-BookItalicLF.eot');
+	src: local('O'), url('../fonts/FedraSansPro-BookItalicLF.woff') format('woff'), url('../fonts/FedraSansPro-BookItalicLF.ttf') format('truetype'), url('../fonts/FedraSansPro-BookItalicLF.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/

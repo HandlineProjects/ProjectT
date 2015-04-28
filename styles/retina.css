@@ -1,0 +1,261 @@
+
+
+/*                  RETINA                     */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.standart {
+	display: none;	
+}
+.retina {
+	display: inline;
+}
+
+
+/*gallery*/
+.list_carousel li .gallery_link_service1 .gallery_circle {
+   background-image: url('../images/gimg1@2x.png');		 
+}
+.list_carousel li .gallery_link_service2 .gallery_circle {
+   background-image: url('../images/gimg2@2x.png');		 
+}
+.list_carousel li .gallery_link_service3 .gallery_circle {
+   background-image: url('../images/gimg3@2x.png');		 
+}
+
+.slide_carousel .button_white {
+    background-image: url("../images/arr1@2x.png");
+}
+.slide_carousel .button_white:hover {
+    background-image: url("../images/arr3@2x.png");
+}
+
+a@2x.prev3, a.next3 {
+    background-image: url("../images/miscellaneous_sprite@2x.png");
+    background-repeat: no-repeat;
+    background-size: 200px 450px;
+}
+a@2x.prev3 {
+    left: 0px;
+    background-position: 0px -100px;
+}
+ 
+a@2x.prev3.disabled {
+    background-position: 0px -100px ! important;
+}
+
+a.next3 {
+    right: -10px;
+    background-position: -35px -100px;
+}
+
+a.next3.disabled {
+    background-position: -35px -100px ! important;
+}
+
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
+  background-image: url("../images/form/sprite@2x@2x.png");
+  background-size: 493px 761px; 
+}
+.pagination a {
+	background-image: url(../images/miscellaneous_sprite@2x.png);
+	 background-size: 200px 450px;
+}  
+
+.logo {
+	background-image: url('../images/logo@2x.png');
+	background-size: 168px 106px;
+}
+
+
+footer a.logo {	
+   background-image: url('../images/blogo@2x.png');		 
+}
+
+
+
+#footer_search input[type="text"] {
+    background-image: url("../images/see@2x.png");
+}
+
+#footer_search input[type="text"]:focus {
+	background-image: url("../images/seec@2x.png");
+}
+
+#search input[type="text"] {
+    background-image: url("../images/see@2x.png");
+}
+
+.closepopbut {
+   background-image: url('../images/closex@2x.png');	
+}
+
+.inputform_gray_small {   
+   background-image: url('../images/see_small@2x.png');		 
+}
+
+.mainmenu a.mainmenu_item1 {
+	background-image: url('../images/mm1@2x.png');
+}
+.mainmenu a.mainmenu_item1.active {
+	background-image: url('../images/mm1a@2x.png');
+}
+
+.mainmenu a.mainmenu_item2 {
+	background-image: url('../images/mm2@2x.png');
+}
+.mainmenu a.mainmenu_item2.active {
+	background-image: url('../images/mm2a@2x.png');
+}
+
+.mainmenu a.mainmenu_item3 {
+	background-image: url('../images/mm3@2x.png');
+}
+.mainmenu a.mainmenu_item3.active {
+	background-image: url('../images/mm3a@2x.png');
+}
+
+.mainmenu a.mainmenu_item4 {
+	background-image: url('../images/mm4@2x.png');
+}
+.mainmenu a.mainmenu_item4.active {
+	background-image: url('../images/mm4a@2x.png');
+}
+
+
+.header_enter_form .inputform {
+	background-image: url('../images/7@2x.png');
+}
+.header_enter_form .submitform,
+.payokblock_email_form .submitform {
+	background-image: url('../images/arr1@2x.png');
+}
+
+.header_enter_form .submitform:hover,
+.payokblock_email_form .submitform:hover
+{
+	background-image: url('../images/arr3@2x.png');
+}
+
+.tomail {
+	background-image: url('../images/ico1@2x.png');
+}
+.tomail:hover {
+	background-image: url('../images/ico1a@2x.png');
+}
+.tocall {
+	background-image: url('../images/ico2@2x.png');
+}
+.tocall:hover {
+	background-image: url('../images/ico2a@2x.png');
+}
+.geo {
+	background-image: url('../images/geo0@2x.png');
+}
+.geo:hover {
+	background-image: url('../images/geo1@2x.png');
+}
+.geo.active {
+	background-image: url('../images/geo1a@2x.png');
+}
+
+.middle_enter_form .inputform {
+	background-image: url('../images/7c@2x.png');
+}
+
+.middle_enter_form a.link {
+	background-image: url('../images/arr1@2x.png');
+}
+.middle_enter_form a.link:hover {
+	background-image: url('../images/arr2@2x.png');
+}
+
+.textpage ul li, .slide ul li {
+	list-style: none;
+	list-style-image: url('../images/li.png');
+	background-size: 14px 12px;
+}
+
+ul.cabinet_mainmenu li.tools a {
+	background-image: url('../images/cm1@2x.png');
+}
+ul.cabinet_mainmenu li.tools a:hover,ul.cabinet_mainmenu li.tools.active a {
+	background-image: url('../images/cm1a@2x.png');
+}
+ul.cabinet_mainmenu li.exit a {
+   background-image: url('../images/cm2@2x.png');
+}
+ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
+	background-image: url('../images/cm2a@2x.png');
+}
+
+.cabinetpage .logo {
+	background-image: url('../images/logo2@2x.png');
+}
+
+.tohelp {
+	background-image: url('../images/ico3@2x.png');
+}
+.tohelp:hover {
+	background-image: url('../images/ico3a@2x.png');
+}
+
+.back {
+	background-image: url('../images/back@2x.png');
+}
+
+.cabinet_form_search .inputform_gray {
+	background-image: url('../images/lksee@2x.png');
+}
+
+.wrapper_dropdown .dropdown:before {
+	background-image: url('../images/smenu_ico2@2x.png');
+}
+
+#ddsort.wrapper_dropdown .main_smenu_title,
+#ddcity.wrapper_dropdown .main_smenu_title {
+	background-image: url('../images/smenu_ico1@2x.png');
+}
+
+#ddsort.active .main_smenu_title ,
+#ddcity.active .main_smenu_title  {
+	background-image: url('../images/smenu_ico2@2x.png');
+}
+
+.categ_ico1 {
+	background-image: url('../images/categ1ico@2x.png');
+}
+.categ_ico2 {
+	background-image: url('../images/categ2ico@2x.png');
+}
+.categ_ico3 {
+	background-image: url('../images/categ3ico@2x.png');
+}
+.categ_ico4 {
+	background-image: url('../images/categ4ico@2x.png');
+}
+.categ_ico5 {
+	background-image: url('../images/categ5ico@2x.png');
+}
+.categ_ico6 {
+	background-image: url('../images/categ6ico@2x.png');
+}
+.categ_ico7 {
+	background-image: url('../images/categ7ico@2x.png');
+}
+.categ_ico8 {
+	background-image: url('../images/categ8ico@2x.png');
+}
+.categ_ico_other {
+	background-image: url('../images/categ_other_ico@2x.png');
+}
+
+.card_data {
+	background-image: url('../images/mastercard@2x.png');
+}
+
+.otable_caption_data .inputform_gray {
+	background-image: url('../images/celend@2x.png');
+}
+
+
+
+}
