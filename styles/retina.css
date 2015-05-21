@@ -256,6 +256,8 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	background-image: url('../images/celend@2x.png');
 }
 
-
+.popup_enterform .submitform {
+	background-image: url('../images/arr4@2x.png');
+}	
 
 }
