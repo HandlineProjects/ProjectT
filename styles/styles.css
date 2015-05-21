@@ -407,6 +407,13 @@ footer .footer_phone {
   padding: 30px 80px 70px;	
 }
 
+.popupboxv4 .popupblock {
+  position: relative; 
+  background-color: white;
+  width: 280px;
+  padding: 30px 80px 70px;	
+}
+
 .popupblock_caption {
 	color: #42484c;
 	text-align: center;
@@ -612,6 +619,25 @@ footer .footer_phone {
  {
 	background-image: url('../images/arr3.png');
 	background-color: #d10059;	
+}
+
+.popup_enterform .inputform_gray {
+	padding: 10px 12px;
+}
+.popup_enterform .submitform {
+	width: 42px;
+	height: 43px;
+	background-image: url('../images/arr4.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 21px 21px;	
+	border: 0;
+	background-color: #d10059;
+}
+
+.popup_enterform .submitform:hover
+ {
+	background-image: url('../images/arr4.png');		
 }
 
 .header_enter_form_link {
