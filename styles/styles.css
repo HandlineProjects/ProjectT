@@ -265,7 +265,7 @@ footer .footer_phone {
 .mb15 {	margin-bottom: 30px; }
 .mb2 {	margin-bottom: 40px; }
 .mb3 {	margin-bottom: 60px; }
-
+.mt-05 {	margin-top: -10px; }
 
 
 .blacktext {
@@ -366,6 +366,25 @@ footer .footer_phone {
 	color: white;   
 }
 
+.button_disabled {
+	background-clip: padding-box; 	
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px;
+	border: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+	background-color: #bdbdbd;
+	font-family: 'FedraSansPro-DemiLF';
+}
+.button_disabled:hover {
+	background-color: #8d8d8d;
+	color: white;
+}
+
 #search input[type="text"] {
     background-image: url("../images/see.png");
     background-repeat:  no-repeat;
@@ -414,6 +433,13 @@ footer .footer_phone {
   padding: 30px 80px 70px;	
 }
 
+.popupboxv5 .popupblock {
+  position: relative; 
+  background-color: white;
+  width: 540px;
+  padding: 50px 40px;	
+}
+
 .popupblock_caption {
 	color: #42484c;
 	text-align: center;
@@ -424,7 +450,10 @@ footer .footer_phone {
 }
 
 
-
+.popup_smalltext {
+	font-size: 14px;
+	color: #7a7a7a;
+}
 
 .closepopbut {
 	display: block;
@@ -1930,10 +1959,12 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
    margin-top: 13px;
 }
 
-.company_page .selectbut_block {
+.company_page .selectbut_block,
+.textpage .selectbut_block {
 	margin: 32px auto 35px;
 }
-.company_page .selectbut_block .active {
+.company_page .selectbut_block .active,
+.textpage .selectbut_block .active {
    background-color: #70006b;
    color: white;
 }
@@ -1995,7 +2026,14 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 
 
 
-
+.popup_dialog .button {
+	width: 200px;
+	padding: 12px 0;
+	font-size: 18px;
+	font-family: 'FedraSansPro-BookLF';
+	display: inline-block;
+	margin: 0 3px;
+}
 
 
 
