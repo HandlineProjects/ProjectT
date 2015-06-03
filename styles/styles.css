@@ -417,7 +417,12 @@ footer .footer_phone {
 .arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
 .arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(loading.gif) no-repeat 50% 50%; }
 
-
+.popupboxv2 .popupblock {
+  position: relative; 
+  background-color: white;
+  width: 280px;
+  padding: 30px 80px 30px;	
+}
 
 .popupboxv3 .popupblock {
   position: relative; 
@@ -449,6 +454,24 @@ footer .footer_phone {
 	
 }
 
+
+.popup_introtext {
+	padding: 20px 20px 0 20px;
+	border-top: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+}
+
+.popupboxv2 .popupblock_nopadd {
+  position: relative; 
+  background-color: white;
+  width: 440px;
+  padding: 30px 0px 30px;	
+}
+
+
+.popupblock.nopadd  .popupblock_caption {
+	padding: 30px 80px;
+}
 
 .popup_smalltext {
 	font-size: 14px;
