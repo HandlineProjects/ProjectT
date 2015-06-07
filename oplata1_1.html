@@ -16,9 +16,6 @@
 <link rel="stylesheet" href="styles/adaptfull.css" />
 
 
-<link rel="stylesheet" href="styles/classic.css" />
-<link rel="stylesheet" href="styles/classic.date.css" />
-
 </head>
 
 <body>
@@ -49,10 +46,9 @@
 <div class="grid_12">
 <nav>
     <ul class="cabinet_mainmenu">
-        <li class="active"><a href="#">Пополнить</a></li>
-        <li><a href="#">Оплатить</a></li>
-        <li><a href="#">Перевести</a></li>
-		<li class="tools "><a href="#"></a></li>
+        <li ><a href="#">Пополнить</a></li>
+        <li class="active"><a href="#">Оплатить</a></li>
+		<li class="tools"><a href="#"></a></li>
 		<li class="exit"><a href="#" class="last"></a></li>
     </ul>
 </nav>
@@ -61,88 +57,80 @@
 </header>
 <!-- #header-->
 
-<section id="content" >
+<section id="content">
 
-<div class="container_12 select_card_page">
-<div class="grid_8 push_2">
- <div class="cls">
-    <div class="mycard">
-	    <div class="card_name_title">Ваша карта</div>
-		<a href="#" class="card_block_mycard">
-		   <img src="images/cardlogo.png" class="standart" width="103"><img src="images/cardlogo@2x.png" class="retina" width=103>
-		   <div class="card_number"><span>5321</span><span>0059</span><span>0103</span><span>0163</span></div>
-		   <div class="card_data">
-		      <div class="card_data_title">MONTH / YEAR</div>
-			  <div>4 / 16</div>
-		   </div>
-		</a>
-	</div>
-	<div class="othercard">
-	    <div class="card_name_title">Пополнить с любой карты</div>
-		<form>
-		<div class="card_block_othercard1">		   
-		   <div class="card_field_title">Номер карты</div>
-		   <div class="card_number_field"><input name="number" type="text" value="" class="inputform_gray" maxlength="20"></div>
-		   <div class="card_data_field">
-		      <div class="card_field_title">Срок действия</div>
-			  <div><input name="MM" type="text" value="" class="inputform_gray fieldmonthyear" placeholder="ММ"> <input name="YY" type="text" value="" class="inputform_gray fieldmonthyear" placeholder="ГГ"></div>
-		   </div>
-		</div>	
-		<div class="card_block_othercard2">		   
-		   <div class="card_field_title">CW/CVC2</div>
-		   <div class="card_cvv_field"><input name="cvv" type="text" value="" class="inputform_gray" maxlength="3"></div>
-		</div>			
-		</form>
-	</div>
+<div class="container_12 ">
+<div class="grid_12">
+ <div class="cabinet_form_search cls">
+     <form>
+	    <input type="text" class="inputform_gray" value="" name="search" placeholder="Найти платеж">
+		<div id="ddsort" class="wrapper_dropdown" tabindex="1">
+			<a class="main_smenu_title sortrel">г. Москва</a>
+			<ul class="dropdown" class="main_smenu_block">
+			    <li><input type="text" class="inputform_gray_small" value="" name="ajaxsearch"></li>
+				<li><a href="#">Все регионы</a></li>
+				<li><a href="#">Москва</a></li>
+				<li><a href="#">Санкт-Петербург</a></li>
+				<li><a href="#">Алтайский край</a></li>
+				<li><a href="#">Амурская область</a></li>
+				<li><a href="#">Архангельская область</a></li>
+				<li><a href="#" class="active">Астраханская область</a></li>
+				<li><a href="#">Байконур</a></li>
+				<li><a href="#">Белгородская область</a></li>
+				<li><a href="#">Брянская область</a></li>
+			</ul>
+		</div> 
+	 </form>
  </div>
+</div> 
+</div>
+
+
+<div class="container_12 ">
+<div class="grid_2">
+ <a href="#" class="back"></a>
+</div> 
+<div class="grid_8">
+ <div class="center maintitle"><h1>Мобильный телефон</h1></div>
 </div> 
 </div> 
 
 
 <div class="container_12 ">
 <div class="grid_12">
- <div class="operation_table">
+ <div class="pay_list cls">
     
-	<div class="cls otable_caption">
-	  <div class="otable_caption_col1">Последние операции</div>
-	  <div class="otable_caption_col2">
-	     <div class="cls">
-	     <div class="otable_caption_data">с <input name="dd1" type="text" value="30.04.2015" class="inputform_gray datepicker_link"  readonly="" ></div>   
-		 <div class="otable_caption_data">по <input name="dd2" type="text" value="30.04.2015" class="inputform_gray datepicker_link" readonly="" ></div>   
-		 </div>
-	  </div>
-	  <div class="otable_caption_col3"><a href="#">Все операции</a></div>
-	</div>
+	<a href="#" class="pay_item">
+	   <div class="pay_img"><img src="assets/images/pl1.png"></div>
+	   <div class="pay_title">Мобильный телефон</div>
+	</a>
 	
-	<div class="cls otable_th">
-	  <div class="ot_col1">Дата</div>
-	  <div class="ot_col2">Сумма</div>
-	  <div class="ot_col3">Операция</div>
-	</div>
+	<a href="#" class="pay_item">
+	   <div class="pay_img"><img src="assets/images/pl2.png"></div>
+	   <div class="pay_title">МТС</div>
+	</a>	
+	
+	<a href="#" class="pay_item">
+	   <div class="pay_img"><img src="assets/images/pl3.png"></div>
+	   <div class="pay_title">Мегафон</div>
+	</a>	
 
-	<div class="cls otable_td">
-	  <div class="ot_col1">20.04.2015</div>
-	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Мобильная связь: Мегафон</div>
-	</div>	
-	
-	<div class="cls otable_td">
-	  <div class="ot_col1">18.04.2015</div>
-	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Интернет: Netbynet</div>
-	</div>	
+	<a href="#" class="pay_item">
+	   <div class="pay_img"><img src="assets/images/pl4.png"></div>
+	   <div class="pay_title">Yota сотовая связь</div>
+	</a>	
 
-	<div class="cls otable_td">
-	  <div class="ot_col1">21.03.2015</div>
-	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Мобильная связь: Мегафон</div>
-	</div>		
+	<a href="#" class="pay_item">
+	   <div class="pay_img"><img src="assets/images/pl5.png"></div>
+	   <div class="pay_title">Tele2</div>
+	</a>	
+
+	<a href="#" class="pay_item">
+	   <div class="pay_img"><img src="assets/images/pl6.png"></div>
+	   <div class="pay_title">Ростелеком. Сотовая связь</div>
+	</a>		
 	
-	<div class="cls otable_td">
-	  <div class="ot_col1">01.03.2015</div>
-	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Интернет: Netbynet</div>
-	</div>	
+	
 	
  </div>
 </div> 
@@ -316,8 +304,6 @@ var ADAPT_CONFIG = {
 };
 </script>
 <script src="js/adapt.js"></script>
-<script src="js/picker.js"></script>
-<script src="js/picker.date.js"></script>
 
 
 
@@ -406,16 +392,7 @@ $(window).resize(function() {
 }); 
 
 
-/*add*/
-	$('.datepicker_link').pickadate({		
-		monthsFull: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-		weekdaysShort: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
-		firstDay: 1,
-		clear: '',
-		today: '',		
-		format: 'dd.mm.yyyy',
-		max: false     
-    });
+
   
   
 });
