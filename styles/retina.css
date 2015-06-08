@@ -52,8 +52,8 @@ a.next3.disabled {
 }
 
 div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
-  background-image: url("../images/form/sprite@2x@2x.png");
-  background-size: 493px 761px; 
+  background-image: url("../images/form/sprite@2x.png");
+  background-size: 493px 900px; 
 }
 .pagination a {
 	background-image: url(../images/miscellaneous_sprite@2x.png);
