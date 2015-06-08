@@ -1552,17 +1552,19 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	color: black;
 }
 .savecardblock_td1 {
-	width: 226px;
+	width: 213px;
 	padding-top: 11px;
 }
 .savecardblock_td2 {
 	width: 180px;
 }
 .savecardblock_td2 .button {
-	width: 175px;
+	width: 180px;
 }
 
-
+.othercard .curr_label {
+	margin-right: 23px;
+}
 
 .operation_table {
 	background-color: #fff;
