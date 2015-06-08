@@ -1425,10 +1425,12 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 
 .mycard, .othercard {
 	margin: 53px 0 83px;
+	margin: 35px 0 83px;
 	float: left;
 }
 .othercard {
 	margin-left: 29px;
+	margin-bottom: 35px;
 }
 .card_name_title {
 	font-size: 18px;
