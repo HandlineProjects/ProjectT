@@ -19,6 +19,7 @@
 
 	var ddsort = new DropDown( $('#ddsort') );
 	var ddcity = new DropDown( $('#ddcity') );
+	var ddcity = new DropDown( $('#ddcard') );
     
 	$(document).click(function() {
 		// all dropdowns
