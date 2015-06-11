@@ -450,6 +450,13 @@ footer .footer_phone {
   width: 540px;
   padding: 50px 40px;	
 }
+.popupboxv5 .sub_popupblock {
+  position: relative; 
+  background-color: white;
+  width: 540px;
+  padding: 25px 40px;
+  margin-top: 2px;	
+}
 
 .popupblock_caption {
 	color: #42484c;
@@ -1911,8 +1918,7 @@ a.ddcard_edit_tool {
 
 
 .passwordblock {
-	background-color: #fff;
-	border: solid 1px #d7d7cb;	
+
 	text-align: center;
 	position: relative;
 	z-index: 1;
@@ -1925,10 +1931,13 @@ a.ddcard_edit_tool {
 .passwordblock_title {
 	font-size: 30px;
 	color: #000;	
-	margin-bottom: 26px;
+	margin-bottom: 0px;
 	padding: 30px 0 30px;
-	border-bottom: solid 1px #d7d7cb;	
+	
 	text-align: center; 
+	background-color: #fff;
+	border: solid 1px #d7d7cb;		
+	
 }
 .passwordblock_form {
 
@@ -1940,14 +1949,29 @@ a.ddcard_edit_tool {
 }
 
 .passwordblock_form .segment1 {
-
+   padding-top: 26px;
 	padding-bottom: 15px;
 	border-bottom: solid 1px #d7d7cb;
+	background-color: #fff;
+	border-left: solid 1px #d7d7cb;
+	border-right: solid 1px #d7d7cb;		
 }
 .passwordblock_form .segment2 {
 
 	margin: 0 auto;
 	padding: 32px 0;
+	background-color: #fff;
+	border-left: solid 1px #d7d7cb;
+	border-right: solid 1px #d7d7cb;
+	border-bottom: solid 1px #d7d7cb;		
+}
+.passwordblock_form .segment3 {
+
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 32px 0;
+	background-color: #fff;
+	border: solid 1px #d7d7cb;		
 }
 
 .passwordblock_form .segment1 .form_label,

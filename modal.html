@@ -74,13 +74,13 @@
  
 <p><a href="#" class="popupv2" rel="exModalEnter">Открыть модальное окно логина</a></p>
 
-<p><a href="#" class="popupv2" rel="exModalRecovery">(новое) Открыть модальное окно Восстановление пароля</a></p>
+<p><a href="#" class="popupv2" rel="exModalRecovery">Открыть модальное окно Восстановление пароля</a></p>
 
-<p><a href="#" class="popupv2" rel="exModalPassword">(новое) Открыть модальное окно ввода пароля</a></p>
+<p><a href="#" class="popupv2" rel="exModalPassword">(новое 11.06) Открыть модальное окно ввода пароля</a></p>
 
-<p><a href="#" class="popupv2" rel="exModalChangePassword">(новое) Открыть модальное окно диалога смены пароля</a></p>
+<p><a href="#" class="popupv2" rel="exModalChangePassword">Открыть модальное окно диалога смены пароля</a></p>
 
-<p><a href="#" class="popupblocker" rel="exModalBlocker">(новое) Открыть модальное окно с ромашкой</a></p>
+<p><a href="#" class="popupblocker" rel="exModalBlocker">(новое 11.06) Открыть модальное окно с ромашкой</a></p>
 
 <code>
 Чтобы вызвать такое окно прописываем на кнопку или ссылку класс "popupblocker" и указываем аттрибут rel="exModalBlocker"<br>
@@ -203,21 +203,24 @@
 
 <div class="hide">
     <div class="box-modal popupboxv5" id="exModalPassword">
-
+<form>
  <div class="popupblock">
      <a href="#" class="closepopbut arcticmodal-close"></a>	
        <div class="popupblock_caption">Введите пароль, отправленный на Ваш номер</div>
 	   <div class="popupblock_info popup_enterform">
 		   <div class="center popup_smalltext mt-05 mb2">Вы сможете изменить свой пароль в настройках</div>
 		   <div class="center">
-		   <form>
+		   
 				<div class="cls"><input name="login" type="text" value="" class="inputform_gray"><input type="submit" name="entertosite" value="" class="submitform"></div>	
-		   </form>
+		   
 		   </div>
 			<div class="center popup_smalltext mt2">Авторизуясь, Вы соглашаетесь с условиями <a href="#">Договора оферты</a></div>
 	   </div>
 </div>
-
+ <div class="sub_popupblock">
+    <div class="center size14"><label><input type="checkbox" name="sendsms" class="custom" value="1" > Получать SMS уведомления</label></div>
+ </div>
+ </form> 
     </div>
 </div>
 
@@ -364,6 +367,7 @@
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <script src="js/tools.js"></script>
+<script src="js/jquery.uniform.js"></script> <!--  Добавляет кастомные виды для форм -->
 
 <script>
 var ADAPT_CONFIG = {
@@ -389,6 +393,10 @@ $(document).ready(function() {
   $(".closeblocker").click(function(){
     $("#exModalBlocker").arcticmodal('close');
   });
+  
+  
+  /*add*/
+$(".custom").uniform(); 
   
 });
 </script>
