@@ -80,7 +80,14 @@
 
 <p><a href="#" class="popupv2" rel="exModalChangePassword">(новое) Открыть модальное окно диалога смены пароля</a></p>
 
+<p><a href="#" class="popupblocker" rel="exModalBlocker">(новое) Открыть модальное окно с ромашкой</a></p>
 
+<code>
+Чтобы вызвать такое окно прописываем на кнопку или ссылку класс "popupblocker" и указываем аттрибут rel="exModalBlocker"<br>
+
+Чтобы закрыть окно вызываем метод (JQuery) :  $("#exModalBlocker").arcticmodal('close');   (см.код окна)<br><br>
+
+</code>
 
 <p>
 Прелоадер (см.исходный код HTML)
@@ -333,6 +340,26 @@
 </div>
 
 
+<div class="hide">
+    <div class="box-modal popupboxv3" id="exModalBlocker">
+
+ <div class="popupblock_blocker">
+    <div id="floatingBarsG">
+    <div class="blockG" id="rotateG_01"></div>
+    <div class="blockG" id="rotateG_02"></div>
+    <div class="blockG" id="rotateG_03"></div>
+    <div class="blockG" id="rotateG_04"></div>
+    <div class="blockG" id="rotateG_05"></div>
+    <div class="blockG" id="rotateG_06"></div>
+    <div class="blockG" id="rotateG_07"></div>
+    <div class="blockG" id="rotateG_08"></div>
+    </div><a href="" class="closeblocker">закрыть</a>
+</div>
+
+    </div>
+</div>
+
+
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
@@ -359,6 +386,9 @@ var ADAPT_CONFIG = {
 <script>
 $(document).ready(function() {
   
+  $(".closeblocker").click(function(){
+    $("#exModalBlocker").arcticmodal('close');
+  });
   
 });
 </script>

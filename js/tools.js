@@ -43,6 +43,18 @@ $('a.popupv2').click(function() {
         return false;
 });
 
+$('a.popupblocker').click(function() {
+
+        var popupid = $(this).attr('rel');
+		$('#'+popupid).arcticmodal({
+		    closeOnOverlayClick: false,
+			closeOnEsc: false,
+		    afterClose: function(){				
+			}
+		});
+		
+        return false;
+});
 		
 
 

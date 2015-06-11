@@ -244,6 +244,9 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 .categ_ico8 {
 	background-image: url('../images/categ8ico@2x.png');
 }
+.categ_ico9 {
+	background-image: url('../images/categ9ico@2x.png');
+}
 .categ_ico_other {
 	background-image: url('../images/categ_other_ico@2x.png');
 }
@@ -259,5 +262,23 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 .popup_enterform .submitform {
 	background-image: url('../images/arr4@2x.png');
 }	
+
+
+#ddcard.wrapper_dropdown .dropdown a.ddcard_del {
+	background-image: url('../images/chest@2x.png');
+}
+a.ddcard_del_tool {
+	background-image: url('../images/chest@2x.png');
+}
+a.ddcard_edit_tool {
+	background-image: url('../images/icoedit@2x.png');
+}
+.categ_item li a.categ_list_more span {
+	background-image: url('../images/itemmore@2x.png');
+}
+
+
+
+
 
 }
