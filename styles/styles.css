@@ -81,6 +81,14 @@ h1 {
 	font-family: 'FedraSansPro-BookLF';
 	font-weight: normal;
 }
+.light_h1 {
+	font-weight: normal;
+	font-size: 50px;
+   color: #70006b;
+	margin: 0;
+	font-family: 'FedraSansPro-LightLF';
+	font-weight: normal;	
+}
 h2 {
 	font-weight: normal;
 	font-size: 30px;
@@ -385,11 +393,21 @@ footer .footer_phone {
 	color: white;
 }
 
+.bigbutton {
+  width: 330px; 
+  font-size: 18px;
+  padding: 20px 0;
+  text-transform: none;
+  font-family: 'FedraSansPro-BookLF';
+}
+
 .standart_center_but {
 	width: 200px;
 	margin: 0 auto;
 }
-
+.center_but {
+	margin: 0 auto;
+}
 
 #search input[type="text"] {
     background-image: url("../images/see.png");
@@ -1707,6 +1725,13 @@ a.ddcard_edit_tool {
 	float: right; 
 	padding-top: 5px;
 }
+
+.otable_caption_col3 a {
+	padding-left: 15px;
+}
+.otable_caption_col3 a.active {
+	color: #70006b;
+}
 .otable_caption_data {
 	float: left;
 	margin-right: 15px;
@@ -1732,6 +1757,24 @@ a.ddcard_edit_tool {
 	font-size: 14px;
 	padding: 16px 27px;
 }
+
+.otable_th_filter_down {
+	background-image: url('../images/smenu_ico1.png');
+	background-position: right center;
+	background-size: 9px 6px;
+	background-repeat: no-repeat;	
+	padding-right: 18px;
+	color: #818181;
+}
+.otable_th_filter_up {
+	background-image: url('../images/smenu_ico2.png');
+	background-position: right center;
+	background-size: 9px 6px;
+	background-repeat: no-repeat;	
+	padding-right: 18px;
+	color: #818181;
+}
+
 .ot_col1 {
 	float: left;
 	width: 253px;
@@ -2482,6 +2525,341 @@ background-color:#face65}
 	color: black;
 	margin-top: 7px;
 }
+
+
+.block_partner_spoiler {
+	background: url("../images/spoiler2.jpg") no-repeat scroll 50% 0 / cover rgba(0, 0, 0, 0);
+   height: 571px;
+   margin-top: 13px;
+   position: relative;
+}
+
+
+.partner_mainmenu {
+	position: absolute;
+	left: 50%;
+	top: 170px;
+	z-index: 99;
+	margin-left: -400px;
+   width: 800px;
+	height: 230px;
+	background-color: rgba(246,246,245,.9);
+	-webkit-box-shadow: 0 5px 24px rgba(0,0,0,.08);
+	-moz-box-shadow: 0 5px 24px rgba(0,0,0,.08);
+	box-shadow: 0 5px 24px rgba(0,0,0,.08);	
+	overflow: hidden;
+}
+.partner_mainmenu a {
+	display: block;
+	background-color: transparent;
+	color: #d10059;
+	text-transform: none;
+	font-size: 16px;
+	width: 100px;
+	font-family: 'FedraSansPro-DemiLF';	
+	text-align: center;
+	padding-top: 135px;
+	padding-bottom: 9px;
+	float: left;
+	width: 200px;
+	height: 230px;
+}
+.partner_mainmenu a:hover {
+	background-color: #af0062;
+	color: white;
+}
+.partner_mainmenu a.active {
+	background-color: #70006b;
+	
+	color: #fff;
+}
+.partner_mainmenu a.partner_mainmenu_item1 {
+	background-image: url('../images/pmm1.png');
+	background-position: center 60px;
+	background-repeat: no-repeat;
+	background-size: 44px 47px; 	
+	
+}
+.partner_mainmenu a.partner_mainmenu_item1.active,
+.partner_mainmenu a.partner_mainmenu_item1:hover
+ {
+	background-image: url('../images/pmm1a.png');
+}
+.partner_mainmenu a.partner_mainmenu_item2 {
+	background-image: url('../images/pmm2.png');
+	background-position: center 60px;
+	background-repeat: no-repeat;
+	background-size: 50px 50px; 	
+}
+.partner_mainmenu a.partner_mainmenu_item2.active,
+.partner_mainmenu a.partner_mainmenu_item2:hover {
+	background-image: url('../images/pmm2a.png');
+}
+.partner_mainmenu a.partner_mainmenu_item3 {
+	background-image: url('../images/pmm3.png');
+	background-position: center 60px;
+	background-repeat: no-repeat;
+	background-size: 42px 57px; 	
+}
+.partner_mainmenu a.partner_mainmenu_item3.active,
+.partner_mainmenu a.partner_mainmenu_item3:hover {
+	background-image: url('../images/pmm3a.png');
+}
+.partner_mainmenu a.partner_mainmenu_item4 {
+	background-image: url('../images/pmm4.png');
+	background-position: center 60px;
+	background-repeat: no-repeat;
+	background-size: 56px 41px; 	
+}
+.partner_mainmenu a.partner_mainmenu_item4.active,
+.partner_mainmenu a.partner_mainmenu_item4:hover {
+	background-image: url('../images/pmm4a.png');
+}
+
+.padding_block {
+	padding: 30px 0;
+}
+.whiteblock {
+	background-color: white;
+   border-bottom: 1px solid #dbe4e5;
+   border-top: 1px solid #dbe4e5;
+   position: relative;
+}
+
+.partner_page_items {
+	margin-top: 40px;
+	padding-left: 100px;
+	color: #464c4d;
+	font-family: 'FedraSansPro-LightLF';
+	font-size: 15px;
+	padding-bottom: 20px;	
+	line-height: 26px;
+}
+.ppi_title {
+	line-height: 36px;
+	color: black;
+	font-family: 'FedraSansPro-BookLF';
+	font-size: 30px;
+	margin-bottom: 15px;	
+}
+.ppi_ico1 {
+	background-image: url('../images/ppi_ico1.png');
+	background-position: 20px 5px;
+	background-repeat: no-repeat;
+	background-size: 39px 37px; 		
+}
+.ppi_ico2 {
+	background-image: url('../images/ppi_ico2.png');
+	background-position: 20px 5px;
+	background-repeat: no-repeat;
+	background-size: 38px 39px; 		
+}
+.ppi_ico3 {
+	background-image: url('../images/ppi_ico3.png');
+	background-position: 15px 5px;
+	background-repeat: no-repeat;
+	background-size: 52px 50px; 		
+}
+.ppi_ico4 {
+	background-image: url('../images/ppi_ico4.png');
+	background-position: 20px 5px;
+	background-repeat: no-repeat;
+	background-size: 47px 42px; 		
+}
+.ppi_ico5 {
+	background-image: url('../images/ppi_ico5.png');
+	background-position: 20px 5px;
+	background-repeat: no-repeat;
+	background-size: 49px 50px; 		
+}
+.ppi_ico6 {
+	background-image: url('../images/ppi_ico6.png');
+	background-position: 20px 5px;
+	background-repeat: no-repeat;
+	background-size: 48px 48px; 		
+}
+
+
+.partner_page_steps {
+  clear: both;	
+  color: #464c4d;
+  font-size: 16px;
+  font-family: 'FedraSansPro-LightLF';
+  line-height: 26px;
+  height: 130px;
+}
+.pps_text {
+	float: left;
+	padding-top: 18px;
+	width: 305px;
+}
+.pps_ico {
+	background-repeat: no-repeat;
+	float: left;	
+   background-image: url('../images/pps_ico1.png');
+	background-position: 0px 0px;
+	background-size: 64px 64px;
+	width: 64px;
+	height: 64px;
+	text-align: center;
+	padding-top: 18px;
+  font-size: 24px;
+  margin-right: 10px;
+  font-family: 'FedraSansPro-BookLF';			
+}
+
+
+.partner_page_infoblock {
+	font-family: 'FedraSansPro-LightItalicLF';
+	font-size: 14px;
+	margin: 30px 0;
+}
+
+.cabinet_subtitle_3 {
+   background-image: url('../images/cabinet_title3.png');
+	background-position: left 4px;
+	background-size: 39px 40px;	
+	background-repeat: no-repeat;	
+	font-size: 24px;
+	color: #70006b;
+	width: 280px;
+	margin: 0 auto;
+	padding: 14px 0 10px 55px;
+}
+
+.cabinet_subtitle {
+	background-color: white;
+	border-left: 1px solid #c7c7c7;
+	border-right: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.perevod_input_block {
+	width: 410px;
+   margin: 30px auto 40px;
+}
+
+
+.perevod_input_field {
+	width: 252px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 5px 18px rgba(0,0,0,.06);
+	-moz-box-shadow: 0 5px 18px rgba(0,0,0,.06);
+	box-shadow: 0 5px 18px rgba(0,0,0,.06);
+	border: solid 1px #d9d9d7;
+	padding: 27px 79px;
+}
+
+
+.perevod_input {
+	font-size: 24px;
+	color: black;
+	font-family: 'FedraSansPro-DemiLF';	
+	width: 252px;
+}
+
+.perevod_input_block .curr_label {
+	margin-right: 40px;
+}
+.perevod_input_block .savecardblock_td1 {    
+    width: 230px;
+}
+
+.perevod_page .operation_table {
+	margin-bottom: 20px;
+}
+
+.operation_table_pagination {
+	border: 1px solid #e9e9e4;
+	background-color: white;
+	padding: 22px 22px 22px 28px;	
+	margin-bottom: 120px;
+}
+
+.operation_table_pagination_col1 {
+	float: left; width: 200px; padding-top:  3px;
+}
+.operation_table_pagination_col2 {
+	float: left; width: 720px;
+}
+.operation_table_pagination_col3 {
+	float: right; width: 200px;
+	text-align: right;
+	padding-top:  9px;
+}
+.operation_table_pagination_col3 a {
+	margin-left: 10px;
+}
+
+#pages {
+  width: 400px;
+  margin: 0 auto;
+}
+#pages a {
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #d10059;
+    text-decoration: none;
+}
+.currentpage {
+    background-color: #70006b;
+    color: White;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 7px 14px;
+    text-decoration: none;
+}
+.page {
+    margin-right: 2px;
+    padding: 7px 14px;
+    text-decoration: none;
+}
+.page_next_link {
+    background-image: url("../images/next.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    padding: 18px 16px;
+    
+}
+.page_previous_link {
+    background-image: url("../images/back.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 29px 26px;
+    margin-right: 18px;
+    padding: 18px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
