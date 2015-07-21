@@ -19,7 +19,8 @@
 
 	var ddsort = new DropDown( $('#ddsort') );
 	var ddcity = new DropDown( $('#ddcity') );
-	var ddcity = new DropDown( $('#ddcard') );
+	var ddcard = new DropDown( $('#ddcard') );
+	var ddpays = new DropDown( $('#ddpays') );
     
 	$(document).click(function() {
 		// all dropdowns

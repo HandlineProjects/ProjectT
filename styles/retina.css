@@ -303,6 +303,30 @@ a.ddcard_edit_tool {
 .page_previous_link {    background-image: url("../images/back@2x.png"); }
 
 
+.small_menu_ico1 {
+    background-image: url("../images/tool_smenu_ico1@2x.png");
+}
+.small_menu_ico2 {
+    background-image: url("../images/tool_smenu_ico2@2x.png");
+}
+.small_menu_ico3 {
+    background-image: url("../images/tool_smenu_ico3@2x.png");
+}
+
+.small_menu_ico1:hover,.small_menu_ico1.active:hover { background-image: url("../images/tool_smenu_ico1h@2x.png"); }
+.small_menu_ico2:hover,.small_menu_ico2.active:hover { background-image: url("../images/tool_smenu_ico2h@2x.png"); }
+.small_menu_ico3:hover,.small_menu_ico3.active:hover { background-image: url("../images/tool_smenu_ico3h@2x.png"); }
+
+.small_menu_ico1.active { background-image: url("../images/tool_smenu_ico1a@2x.png"); }
+.small_menu_ico2.active { background-image: url("../images/tool_smenu_ico2a@2x.png"); }
+.small_menu_ico3.active { background-image: url("../images/tool_smenu_ico3a@2x.png"); }
+
+div.jquery-switch-wrapper a.jquery-switch {
+  background-image: url("../images/form/switches@2x.png");
+  background-size: 43px 46px; 
+}
+
+
 
 
 }

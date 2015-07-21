@@ -577,6 +577,10 @@ footer .footer_phone {
 .big_field {
 	width: 300px;
 }
+.small_field,
+.form_input_area .small_field {
+	width: 170px;
+}
 
 /*                         PRODUCTION                                */
 
@@ -1002,6 +1006,7 @@ footer .footer_phone {
    color: #70006b;
    text-align: center;
    margin-top: 39px;	
+   position: relative;
 }
 .headercabinet .summa span {
 	color: #a2a2a2;
@@ -1391,6 +1396,75 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	float: left;
 	width: 260px;
 }
+
+#ddpays {
+	width: 340px;
+}	
+#ddpays.wrapper_dropdown .main_submenu_title {
+   /*width: 212px;*/
+
+   font-size: 14px;
+   background-position: 205px center;
+   color: #d10059;
+	background-image: url('../images/dmenu0.png');
+	background-size: 13px 8px;
+	padding-left: 20px;
+	background-position: left center;
+	background-repeat: no-repeat; 
+	cursor: pointer  
+}
+
+#ddpays.wrapper_dropdown .main_submenu_title span {
+	color: #5c5c5c; font-family: 'FedraSansPro-BookLF';
+}
+#ddpays.wrapper_dropdown .main_submenu_title span span {
+	color: #70006b; font-family: 'FedraSansPro-MediumLF';
+}
+
+#ddpays.wrapper_dropdown .main_submenu_title:hover {
+	color: #70006b;
+	background-image: url('../images/dmenu1.png');
+}
+#ddpays.wrapper_dropdown .dropdown {
+   padding: 10px 10px 10px;		
+	background-color: #fff;
+	-webkit-box-shadow: 0 5px 18px rgba(0,0,0,.06);
+	-moz-box-shadow: 0 5px 18px rgba(0,0,0,.06);
+	box-shadow: 0 5px 18px rgba(0,0,0,.06);
+	border: solid 1px #70006b;	   
+   
+	width: 285px;	
+	right: auto;
+	top: 28px;
+}
+
+#ddpays.wrapper_dropdown .dropdown .ddpays_name {
+	display: block;
+	position: relative;
+	
+}
+
+#ddpays.wrapper_dropdown .dropdown .ddpays_name .preload_small {
+	position: absolute;
+	right: 10px;
+	top: 9px;
+}
+
+#ddpays.wrapper_dropdown .dropdown::before {
+    background-image: none;
+}
+
+#ddpays.wrapper_dropdown .dropdown a.ddcard_name {
+	padding: 3px 2px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	width: 260px;
+}
+
+
+
+
 .cards_tools {
 	position: relative;
 }
@@ -1736,7 +1810,7 @@ a.ddcard_edit_tool {
 	float: left;
 	margin-right: 15px;
 }
-.otable_caption_data .inputform_gray {
+.otable_caption_data .inputform_gray, .form_input_area .datepicker_link {
 	background-image: url('../images/celend.png');
 	background-position: 108px center;
 	background-size: 25px 24px;
@@ -1746,6 +1820,14 @@ a.ddcard_edit_tool {
 	color: #000;
 	font-family: 'FedraSansPro-DemiLF';				
 	margin-left: 7px;
+}
+
+.form_input_area .datepicker_link {
+  margin-left: 0; background-position: 158px center;
+}
+
+.form_input_area .datepicker_link.small_field {
+	width: 170px;
 }
 
 .otable_th {
@@ -2024,7 +2106,8 @@ a.ddcard_edit_tool {
 	margin-left: auto;
 	margin-right: auto;
 }
-.passwordblock_form .segment2 .button  {
+.passwordblock_form .segment2 .button ,
+.tool_info_block .savebutton  {
 	padding: 15px 0;
 }
 .passwordblock_form .segment1 .form_input_area .inputform_gray {
@@ -2490,6 +2573,32 @@ background-color:#face65}
 }
 
 
+
+/*preloader 2*/
+@keyframes clockwise {
+  to {
+    transform: rotate(360deg) translatez(0);
+  }
+}
+.preload {
+  height: 25px;
+  width: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(178, 0, 98, 1) rgba(178, 0, 98, 1) rgba(178, 0, 98, 1) rgba(249, 205, 100, 1);
+  border-radius: 100%;
+  animation: clockwise 1.0s linear infinite;
+}
+.preload_small {
+  height: 10px;
+  width: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(178, 0, 98, 1) rgba(178, 0, 98, 1) rgba(178, 0, 98, 1) rgba(249, 205, 100, 1);
+  border-radius: 100%;
+  animation: clockwise 1.0s linear infinite;
+}
+
 .block505 {
 	margin: 60px 0 40px;
 	font-size: 18px;
@@ -2908,6 +3017,240 @@ background-color:#face65}
     padding: 18px 16px;
 }
 
+
+.headercabinet .summa.submenu {
+	width: 300px;
+   /*padding-left: 40px;*/
+}
+
+
+.summa_submenu  {
+	font-size: 14px;
+	color: #5c5c5c;
+	width: 300px;
+	padding-left: 0px;
+	margin-top: 7px;
+}
+.summa_submenu span {
+	color: #70006b;
+	font-family: 'FedraSansPro-BoldLF';
+}
+.preload2_block {
+	width: 40px;
+	float: left;
+	padding-top: 8px;
+	margin-right: 10px;
+}
+
+.summa_value {
+	float: left;
+}
+
+.toolspage_small_menu {
+   margin: 30px auto 40px;
+   width: 220px;
+   margin-left: 60px;	
+}
+.toolspage_stat_block {
+	font-size: 12px;
+	color: black;
+   margin: 30px auto 40px;
+   width: 220px;
+   margin-left: 60px;
+}
+.toolspage_stat_block_title {
+	color: #70006b;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.toolspage_stat_block p {
+	font-size: 14px;
+}
+.toolspage_stat_block p span {
+	font-size: 18px;
+	font-family: 'FedraSansPro-MediumLF';
+}
+
+.toolspage_small_menu a {
+	display: block;   
+   background-repeat: no-repeat;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	padding-left: 35px;
+}
+.toolspage_small_menu a.active {
+	font-family: 'FedraSansPro-MediumLF';
+	color: #70006b;
+}
+.small_menu_ico1 {
+    background-image: url("../images/tool_smenu_ico1.png");
+    background-size: 20px 20px;
+}
+.small_menu_ico2 {
+    background-image: url("../images/tool_smenu_ico2.png");
+    background-size: 16px 19px;
+    background-position: 2px center;
+}
+.small_menu_ico3 {
+    background-image: url("../images/tool_smenu_ico3.png");
+    background-size: 20px 14px;
+    background-position: 2px center;
+}
+
+.small_menu_ico1:hover,.small_menu_ico1.active:hover { background-image: url("../images/tool_smenu_ico1h.png"); }
+.small_menu_ico2:hover,.small_menu_ico2.active:hover { background-image: url("../images/tool_smenu_ico2h.png"); }
+.small_menu_ico3:hover,.small_menu_ico3.active:hover { background-image: url("../images/tool_smenu_ico3h.png"); }
+
+.small_menu_ico1.active { background-image: url("../images/tool_smenu_ico1a.png"); }
+.small_menu_ico2.active { background-image: url("../images/tool_smenu_ico2a.png"); }
+.small_menu_ico3.active { background-image: url("../images/tool_smenu_ico3a.png"); }
+
+
+.tool_info_block {
+    background-color: #fff;
+    border: 1px solid #d7d7cb;
+    margin: 0px auto 10px;    
+    /*padding-top: 21px;*/
+    position: relative;    
+
+    z-index: 1;
+    padding: 35px;
+}
+.tool_info_block_nopadd {
+    background-color: #fff;
+    border: 1px solid #d7d7cb;
+    margin: 0px auto 10px;    
+    position: relative;    
+    z-index: 1;    
+}
+.tool_info_block .form_label {
+    color: black;
+    font-size: 14px;
+    text-align: left;
+}
+
+.tool_info_block_title {
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7cb;
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.tool_info_block_smscheck_block {
+	padding: 25px;
+	color: #969696;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.smscheck_label {
+	font-size: 16px;
+	color: black;
+	font-family: 'FedraSansPro-BookLF';
+	height: 40px;
+}
+.smscheck_input {
+	position: relative;
+	width: 50px;
+	height: 30px;
+}
+.tool_info_block .savebutton {
+	width: 220px;
+	margin-top: 25px;
+}
+
+.topspace {
+	margin-top: 30px;
+}
+
+.redborder {
+	border: 1px solid #d10059;
+}
+
+.tool_simple_ident {
+	
+}
+
+.tool_bottom_content {
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 30px;
+}
+
+.tool_simple_ident_linkon {
+	border: 1px solid #d10059;
+	font-size: 18px;
+	font-family: 'FedraSansPro-DemiLF';
+	display: block;
+	padding: 35px;
+	background-color: white;
+	position: relative;
+}
+.tool_simple_ident_linkon.hide {
+	display: none;
+}
+.plusicobut {
+	position: absolute;
+	top: 30px;
+	right: 35px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #d10059;
+	text-align: center;
+	line-height: 27px;
+	font-size: 24px;
+	font-family: 'FedraSansPro-LightLF';		
+}
+
+.tool_simple_ident {
+	position: relative;
+	color: black;
+	font-size: 14px;
+}
+.tool_simple_ident_title {
+	font-size: 18px;
+	font-family: 'FedraSansPro-DemiLF';
+	margin-bottom: 20px;	
+}
+
+.tool_simple_ident_col1,
+.tool_simple_ident_col2,
+.checkbox_wrap,
+.checkbox_label_wrap {
+	float: left;
+}
+
+.tool_simple_ident_col1 {
+	width: 226px;
+}
+.tool_simple_ident_col2 {
+	width: 200px;
+}
+
+.tool_info_block_passwordform {
+	width: 220px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.tool_info_block_passwordform .small_field {
+	width: 198px;
+}
+
+.checkbox_wrap {
+	width: 29px;
+}
+.checkbox_label_wrap {
+	width: 400px;
+	font-size: 14px;
+	line-height: 20px;
+	color: black;
+}
 
 
 
