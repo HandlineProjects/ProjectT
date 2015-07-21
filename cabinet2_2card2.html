@@ -130,49 +130,126 @@
  <div class="operation_table">
     
 	<div class="cls otable_caption">
-	  <div class="otable_caption_col1">Последние операции</div>
+	  <div class="otable_caption_col1">Последние переводы</div>
 	  <div class="otable_caption_col2">
 	     <div class="cls">
 	     <div class="otable_caption_data">с <input name="dd1" type="text" value="30.04.2015" class="inputform_gray datepicker_link"  readonly="" ></div>   
 		 <div class="otable_caption_data">по <input name="dd2" type="text" value="30.04.2015" class="inputform_gray datepicker_link" readonly="" ></div>   
 		 </div>
 	  </div>
-	  <div class="otable_caption_col3"><a href="#">Все операции</a></div>
+	  <div class="otable_caption_col3"><a href="#" class="active">Переводы</a>      <a href="#">Оплата</a>      <a href="#">Пополнение</a><a href="#">Все операции</a></div>
 	</div>
 	
 	<div class="cls otable_th">
-	  <div class="ot_col1">Дата</div>
-	  <div class="ot_col2">Сумма</div>
-	  <div class="ot_col3">Операция</div>
+	  <div class="ot_col1"><a href="#" class="otable_th_filter_down">Дата</a></div>
+	  <div class="ot_col2"><a href="#" class="otable_th_filter_up">Сумма</a></div>
+	  <div class="ot_col3"><a href="#" class="otable_th_filter_down">Операция</a></div>
 	</div>
 
 	<div class="cls otable_td">
 	  <div class="ot_col1">20.04.2015</div>
 	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Мобильная связь: Мегафон</div>
+	  <div class="ot_col3">Перевод на карту 3269***2144</div>
 	</div>	
 	
 	<div class="cls otable_td">
 	  <div class="ot_col1">18.04.2015</div>
 	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Интернет: Netbynet</div>
+	  <div class="ot_col3">Перевод на карту 3339***0152</div>
 	</div>	
 
 	<div class="cls otable_td">
 	  <div class="ot_col1">21.03.2015</div>
 	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Мобильная связь: Мегафон</div>
+	  <div class="ot_col3">Перевод на карту 3269***3455</div>
 	</div>		
 	
 	<div class="cls otable_td">
 	  <div class="ot_col1">01.03.2015</div>
 	  <div class="ot_col2">1 000.00 руб</div>
-	  <div class="ot_col3">Интернет: Netbynet</div>
+	  <div class="ot_col3">Перевод на карту 1155***2144</div>
 	</div>	
+	
+	<div class="cls otable_td">
+	  <div class="ot_col1">20.04.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 3269***2144</div>
+	</div>	
+	
+	<div class="cls otable_td">
+	  <div class="ot_col1">18.04.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 3339***0152</div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col1">21.03.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 3269***3455</div>
+	</div>		
+	
+	<div class="cls otable_td">
+	  <div class="ot_col1">01.03.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 1155***2144</div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col1">20.04.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 3269***2144</div>
+	</div>	
+	
+	<div class="cls otable_td">
+	  <div class="ot_col1">18.04.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 3339***0152</div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col1">21.03.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 3269***3455</div>
+	</div>		
+	
+	<div class="cls otable_td">
+	  <div class="ot_col1">01.03.2015</div>
+	  <div class="ot_col2">1 000.00 руб</div>
+	  <div class="ot_col3">Перевод на карту 1155***2144</div>
+	</div>		
+	
 	
  </div>
 </div> 
+
+<div class="grid_12">
+ <div class="operation_table_pagination cls">
+     
+	 <div class="operation_table_pagination_col1">
+	   <form>На странице: <select name="pagecount" class="custom pagecount"><option value="10">10</option><option value="20">20</option><option value="100">100</option></select></form>
+	 </div>
+	 
+	 <div class="operation_table_pagination_col2">
+		<div id="pages">
+		    <a class="page_previous_link" href="#"></a>
+			  <a class="page" href="#">1</a>
+			  <span class="currentpage ditto_page_2">2</span>
+			  <a class="page" href="#">3</a>
+			  <a class="page" href="#">4</a>
+			  <a class="page" href="#">...</a>
+			  <a class="page" href="#">11</a>
+			  <a class="page" href="#">12</a>
+			<a class="page_next_link" href="#"></a>
+	    </div>
+	 </div>
+	 
+	 <div class="operation_table_pagination_col3">Скачать:   <a href="#">PDF</a>  <a href="#">XML</a></div>
+	 
+ </div> 
 </div> 
+<div class="clearfix"></div>
+
+</div>
   
 </section><!-- #content-->
 
