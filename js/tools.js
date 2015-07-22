@@ -31,7 +31,7 @@
 
 
 /* modal version 2  uses arcticmodal */
-$('a.popupv2').click(function() {
+$('.popupv2').click(function() {
 
         var popupid = $(this).attr('rel');
 		//hide all open popup

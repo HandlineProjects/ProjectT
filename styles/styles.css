@@ -3262,14 +3262,34 @@ background-color:#face65}
 	width: 75px;
 }
 
+.action_add_link {
+    background-image: url("../images/action_add.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;        
+    display: block;
+    padding: 4px 4px 4px 30px;
+    width: 200px;
+}
 
+.save_template_check {
+	float: left;
+	margin: 14px 0 0 30px;
+	font-size: 14px;
+}
 
+.dynamic_fields .form_input_area {
+	margin-top: 15px;
+}
 
-
-
-
-
-
+.del_dynamic_fields {
+    background-image: url("../images/action_del_small.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;  
+    padding: 0 10px;
+    margin-left: 5px;	
+}
 
 
 
