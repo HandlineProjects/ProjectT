@@ -354,6 +354,12 @@ footer .footer_phone {
 	color: white;
 }
 
+.button.disabled {
+	background-color: #d3d3d3;
+	border: 1px solid #b7b7b7;
+	cursor: default;
+}
+
 .button_white {
 	background-clip: padding-box; 	
 	color: #d10059;
