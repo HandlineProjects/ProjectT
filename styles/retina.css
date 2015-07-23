@@ -326,7 +326,23 @@ div.jquery-switch-wrapper a.jquery-switch {
   background-size: 43px 46px; 
 }
 
+.action_add_link {
+    background-image: url("../images/action_add@2x.png");
+}
 
+.del_dynamic_fields {
+    background-image: url("../images/action_del_small@2x.png");
+
+}
+.mytemplate_list_item_del {
+	background-image: url('../images/chest@2x.png');
+}
+.mytemplate_list_item_edit {
+	background-image: url('../images/icoedit@2x.png');
+}
+.mytemplate_list_showall {
+	background-image: url('../images/arr_down@2x.png');
+}
 
 
 }

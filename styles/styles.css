@@ -3292,11 +3292,94 @@ background-color:#face65}
 }
 
 
+.mytemplate_list_block {
+	margin-right: -4px;
+}
+.mytemplate_list_item {
+	background-color: #fff;
+	border: solid 1px #d7d7cb;	
+	width: 166px;
+	height: 108px;
+	overflow: hidden;
+   display: block;
+   padding: 15px; 	
+	z-index: 1;
+	margin-right: -1px;  
+	margin-bottom: -1px;	
+	position: relative;
+	float: left;
+}
+.mytemplate_list_item:hover {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.15);
+	box-shadow: 0 0 10px rgba(0,0,0,.15);
+	border: solid 1px #e40062;
+	z-index: 99;
+	position:relative; 	
+}
+
+.mytemplate_list_item_logo {
+	text-align: center;
+	height: 49px; overflow: hidden;	
+}
+.mytemplate_list_item_title {
+	text-align: center;
+	display: block;
+	color: #e40062;
+	font-size: 12px;
+	font-family: 'FedraSansPro-BookLF';
+}
+.mytemplate_list_item_del {
+	padding: 0px;
+	background-image: url('../images/chest.png');
+	background-size: 12px 12px;
+	background-position: right center;
+	background-repeat: no-repeat; 
+	display: none;
+   width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 106px;
+	bottom: 7px;
+
+}
+.mytemplate_list_item_edit {
+	padding: 0px;
+	background-image: url('../images/icoedit.png');
+	background-size: 14px 14px;
+	background-position: right center;
+	background-repeat: no-repeat; 
+	display: none;
+   width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 72px;
+	bottom: 7px;
+}
 
 
+.mytemplate_list_item:hover .mytemplate_list_item_del,
+.mytemplate_list_item:hover .mytemplate_list_item_edit {
+	display: block;
+}
 
+.mytemplate_list_showall {
+	padding: 0px;
+	background-image: url('../images/arr_down.png');
+	background-size: 22px 8px;
+	background-position: bottom center;
+	background-repeat: no-repeat; 
+	display: block;
+   width: 160px;
+	height: 32px;	
+	margin: 20px auto;
+	font-size: 14px;
+}
 
-
+.mytemplate_list_moreitems {
+	display: none;
+}
 
 
 
