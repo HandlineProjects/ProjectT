@@ -515,6 +515,12 @@ footer .footer_phone {
 	color: #7a7a7a;
 }
 
+.popup_smalltext_size12 {
+	font-size: 12px;
+	color: #7a7a7a;
+	line-height: 18px;	
+}
+
 .closepopbut {
 	display: block;
    background-image: url('../images/closex.png');		 
