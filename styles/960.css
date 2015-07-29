@@ -503,6 +503,14 @@ body {
 	margin-left: 50px;
 }
 
+.tool_info_block .form_input_area input, .tool_info_block .form_input_area textarea {
+    width: 297px;
+}
+
+.tool_info_block .checkbox_label_wrap {
+    width: 300px;
+}
+
 /*                  RETINA                     */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
