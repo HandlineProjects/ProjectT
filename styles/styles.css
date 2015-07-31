@@ -1583,6 +1583,15 @@ a.ddcard_edit_tool {
 	margin-left: 29px;	
 }
 
+.categ_item_counts {
+	color: #e40062;
+	line-height: 20px;
+	font-size: 12px;
+	position: absolute;
+	left: 31px;
+	bottom: 20px;
+}
+
 .categ_ico1 {
 	background-image: url('../images/categ1ico.png');
 	background-size: 26px 45px;	
