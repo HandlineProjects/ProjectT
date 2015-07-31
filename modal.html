@@ -89,6 +89,30 @@
 
 </code>
 
+<p><a href="#" class="popupblockeroverlay" rel="exModalBlockerOverlay">(новое 31.07) Открыть модальное окно оверлей</a></p>
+
+<code>
+Чтобы вызвать такое окно прописываем на кнопку или ссылку класс "popupblockeroverlay" и указываем аттрибут rel="exModalBlockerOverlay"<br>
+Или вызываем метод:<br>
+$('#exModalBlockerOverlay').arcticmodal({<br>
+    closeOnEsc: false,<br>
+    closeOnOverlayClick: false,<br>
+    overlay: {<br>
+        css: {<br>
+            backgroundColor: '#fff',<br>
+            /*backgroundImage: 'url(images/overlay.png)',  можно использовать фон для примера и другие свойства CSS*/<br>
+            /*backgroundRepeat: 'repeat',  для примера */<br>
+            /*backgroundPosition: '50% 0',  для примера  */<br>
+            opacity: .75<br>
+        }<br>
+    }<br>
+}); <br> 
+Чтобы закрыть окно вызываем метод (JQuery) :  $("#exModalBlockerOverlay").arcticmodal('close');   (см.код окна)<br><br>
+
+В < script >< /script > прописываем доп опции окна.  Чтобы открыть оверлей метод 'click' из примера опустить.
+
+</code>
+
 <p>
 Прелоадер (см.исходный код HTML)
 
@@ -364,6 +388,18 @@
 </div>
 
 
+<div class="hide">
+    <div class="box-modal popupboxv3" id="exModalBlockerOverlay">
+
+ <div class="popupblock_blocker">
+  <a href="#" class="closepopbut arcticmodal-close"></a>	
+ </div>
+
+    </div>
+</div>
+
+
+
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
@@ -395,6 +431,21 @@ $(document).ready(function() {
     $("#exModalBlocker").arcticmodal('close');
   });
   
+$(".popupblockeroverlay").click(function(){  
+$('#exModalBlockerOverlay').arcticmodal({
+    closeOnEsc: false,
+    closeOnOverlayClick: false,
+    overlay: {
+        css: {
+            backgroundColor: '#fff',
+            /*backgroundImage: 'url(images/overlay.png)',  для примера */
+            /*backgroundRepeat: 'repeat',  для примера */
+            /*backgroundPosition: '50% 0',  для примера  */
+            opacity: .75
+        }
+    }
+});  
+});  
   
   /*add*/
 $(".custom").uniform(); 
