@@ -3413,14 +3413,8 @@ background-color:#face65}
 }
 
 
-.topspoiler {
-	font-size: 16px;
-	color: white;
-	line-height: 28px;
-	font-family: 'FedraSansPro-BookLF';
-	padding: 7px 0;	
-}
-.topspoiler  a {
+
+.topspoiler  span {
    font-family: 'FedraSansPro-MediumLF';
    color: white;	
 }
@@ -3433,4 +3427,13 @@ background-color:#face65}
 	background-image: -ms-linear-gradient(right, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);
 	background-image: linear-gradient(to left, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);	
 	text-align: center;
+	font-size: 16px;
+	color: white;
+	line-height: 28px;
+	font-family: 'FedraSansPro-BookLF';
+	padding: 7px 0;
+	display: block;	
+}
+.topspoiler:hover {
+	color: white;
 }
