@@ -119,7 +119,9 @@ header {
   height: 155px; 	border-top: 2px solid #af0062;
 }
 
-
+header.withtopspoiler {
+  height: 157px; 	border-top: 0px;
+}
 
 
 
@@ -399,6 +401,14 @@ footer .footer_phone {
 	color: white;
 }
 
+.midbutton {
+  width: 280px; 
+  font-size: 18px;
+  padding: 11px 0;
+  text-transform: none;
+  font-family: 'FedraSansPro-BookLF';
+}
+
 .bigbutton {
   width: 330px; 
   font-size: 18px;
@@ -519,6 +529,12 @@ footer .footer_phone {
 	font-size: 12px;
 	color: #7a7a7a;
 	line-height: 18px;	
+}
+
+.popup_smalltext_size16 {
+	font-size: 16px;
+	color: #000;
+	line-height: 24px;	
 }
 
 .closepopbut {
@@ -3397,5 +3413,24 @@ background-color:#face65}
 }
 
 
+.topspoiler {
+	font-size: 16px;
+	color: white;
+	line-height: 28px;
+	font-family: 'FedraSansPro-BookLF';
+	padding: 7px 0;	
+}
+.topspoiler  a {
+   font-family: 'FedraSansPro-MediumLF';
+   color: white;	
+}
 
-
+.topspoiler {
+	background-color: #af0062;
+	background-image: -webkit-linear-gradient(right, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);
+	background-image: -moz-linear-gradient(right, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);
+	background-image: -o-linear-gradient(right, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);
+	background-image: -ms-linear-gradient(right, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);
+	background-image: linear-gradient(to left, #dc0057, #e04525 35%, #eb8d37 65%, #f9d15d);	
+	text-align: center;
+}
