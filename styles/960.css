@@ -513,6 +513,17 @@ body {
     width: 300px;
 }
 
+
+.mfa_table_td1 {	width: 110px; padding-left: 10px; }
+.mfa_table_td2 {	width: 96px; }
+.mfa_table_td3 {	width: 115px; }
+.mfa_table_td4 {	width: 105px; }
+.mfa_table_td5 {	width: 370px; }
+.mfa_table_td6 {	width: 100px; }
+
+
+
+
 /*                  RETINA                     */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
