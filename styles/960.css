@@ -397,7 +397,9 @@ body {
 .cabinet_form_search .inputform_gray {    
     width: 595px;
 }
-
+.cabinet_form_search .inputform_gray:focus {
+	width: 542px;
+}
 .categ_title {
    font-size: 18px;
    padding: 22px 29px 22px 55px;    
