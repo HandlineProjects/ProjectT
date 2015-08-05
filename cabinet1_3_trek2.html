@@ -68,7 +68,7 @@
 <div class="grid_12">
  <div class="cabinet_form_search cls">
      <form class="mainsearch_form">
-	    <input type="text" class="inputform_gray mainsearch_text" value="" name="search" placeholder="Найти платеж или перевод">
+	    <input type="text" class="inputform_gray mainsearch_text" value="1245784" name="search" placeholder="Найти платеж или перевод">
 		<input type="submit" name="go" class="cabinet_form_search_submit mainsearch_submit" value="">
 		<div id="ddsort" class="wrapper_dropdown" tabindex="1">
 			<a class="main_smenu_title sortrel">г. Москва</a>
@@ -165,7 +165,6 @@
 				<div class="mfa_table_td4 left">Комиссия</div>
 				<div class="mfa_table_td5 left">Операция</div>
 				<div class="mfa_table_td6 left">Статус</div>	
-					<a href="#" class="mainsearch_form_result_close"></a>
 			</div>
 		</div><div class="clearfix"></div>
   </div>
@@ -178,7 +177,7 @@
 				<div class="mfa_table_td2 left">24.07.2015</div>
 				<div class="mfa_table_td3 left">1 000.00 руб</div>
 				<div class="mfa_table_td4 left">2.00 руб</div>
-				<div class="mfa_table_td5 left"><div class="mfr_longtitle"><span class="mfr_short">ПАО «Объединенная Логистическая компания</span><span class="mfr_long"> «Главтрансрегионстрой», подразделение г. Североморск»</span></div></div>
+				<div class="mfa_table_td5 left">ПАО «Объединенная Логистическая компания «Главтрансрегионстрой», подразделение г. Североморск»</div>
 				<div class="mfa_table_td6 left">Получено</div>								
 			</div>
 		</div><div class="clearfix"></div>
@@ -193,7 +192,7 @@
 				<div class="mfa_table_td2 left">24.07.2015</div>
 				<div class="mfa_table_td3 left">1 000.00 руб</div>
 				<div class="mfa_table_td4 left">2.00 руб</div>
-				<div class="mfa_table_td5 left"><div class="mfr_longtitle"><span class="mfr_short">ПАО «Объединенная Логистическая компа</span><span class="mfr_long">ния «Главтрансрегионстрой», подразделение г. Североморск»</span></div></div>
+				<div class="mfa_table_td5 left">ПАО «Объединенная Логистическая компания «Главтрансрегионстрой», подразделение г. Североморск»</div>
 				<div class="mfa_table_td6 left">Получено</div>								
 			</div>
 		</div><div class="clearfix"></div>
@@ -208,7 +207,7 @@
 				<div class="mfa_table_td2 left">24.07.2015</div>
 				<div class="mfa_table_td3 left">1 000.00 руб</div>
 				<div class="mfa_table_td4 left">2.00 руб</div>
-				<div class="mfa_table_td5 left"><div class="mfr_longtitle"><span class="mfr_short">Перевод на карту 9854 ....  5555</span><span class="mfr_long"> «Главтрансрегионстрой», подразделение г. Североморск»</span></div></div>
+				<div class="mfa_table_td5 left">Перевод на карту 9854 ....  5555 «Главтрансрегионстрой», подразделение г. Североморск»</div>
 				<div class="mfa_table_td6 left">Получено</div>								
 			</div>
 		</div><div class="clearfix"></div>
@@ -768,7 +767,7 @@ $(document).ready(function() {
   /*проверка поля на символы для вывода submit кнопки (интервал можно менять) */  
   setInterval(function() { 
 	if ( $('.mainsearch_text').val() != '' )	$('.mainsearch_submit').show();  
-	else $('.mainsearch_submit').hide();  
+	else { $('.mainsearch_submit').hide();  $('.mainsearch_form_result').hide();  }
   }, 1000);
   
   $('.mainsearch_form_result_close').on('click', function(){
@@ -776,19 +775,7 @@ $(document).ready(function() {
   	return false;
   });
   
-  $('.mfr_short').each(function(){
-	$(this).append('<span class="mfr_dots"></span>');
-  });
-  
 
-
-  $(".mainsearch_form_result a").hover(function(){    
-    $(this).find('.mfr_long').show();
-	$(this).find('.mfr_dots').hide();
-  },function(){     
-	$(this).find('.mfr_long').hide();
-	$(this).find('.mfr_dots').show();
-  });
  
   
   
