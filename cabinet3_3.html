@@ -49,8 +49,9 @@
 <div class="grid_12">
 <nav>
     <ul class="cabinet_mainmenu">
-        <li class="active"><a href="#">Пополнить</a></li>
+        <li><a href="#">Пополнить</a></li>
         <li><a href="#">Оплатить</a></li>        
+		<li class="active"><a href="#">Перевести</a></li>    
 		<li class="tools "><a href="#"></a></li>
 		<li class="exit"><a href="#" class="last"></a></li>
     </ul>
@@ -60,49 +61,37 @@
 </header>
 <!-- #header-->
 
-<section id="content" >
+<section id="content" class="perevod_page">
+
+<div class="container_12">
+<div class="grid_12">
+   <div class="cabinet_subtitle">
+	<div class="cabinet_subtitle_3">Перевод на Т-кошелёк</div>
+   </div>
+</div>
+</div><div class="clearfix"></div>
 
 <div class="container_12 select_card_page">
 <div class="grid_8 push_2">
  <div class="cls">
-    <div class="mycard">
-	    <div class="card_name_title">Ваша карта</div>
-		<a href="#" class="card_block_mycard">
-		   <img src="images/cardlogo.png" class="standart" width="103"><img src="images/cardlogo@2x.png" class="retina" width=103>
-		   <div class="card_number"><span>5321</span><span>0059</span><span>0103</span><span>0163</span></div>
-		   <div class="card_data">
-		      <div class="card_data_title">MONTH / YEAR</div>
-			  <div>4 / 16</div>
-		   </div>
-		</a>
-	</div>
-	<div class="othercard">
+	<div class="perevod_input_block">
+	
 	    <div class="card_name_title cards_tools">
-					   <a href="#" class="ddcard_del_tool popupv2" rel="exModalDelCard"></a>
-			           <a href="#" class="ddcard_edit_tool popupv2" rel="exModalRenameCard"></a>
+					   <a href="#" class="ddcard_del_tool popupv2" rel="exModalDelName"></a>
+			           <a href="#" class="ddcard_edit_tool popupv2" rel="exModalRenameName"></a>		
 			<div id="ddcard" class="wrapper_dropdown" tabindex="1">
-			<a class="main_smenu_title cardslistmenu">Название карты 2550****3564</a>
+			<a class="main_smenu_title cardslistmenu">Имя получателя</a>
 			<ul class="dropdown" class="main_smenu_block">
-				<li class="cls"><a href="#" class="ddcard_name">Название карты 2550****3564</a><a href="#" class="ddcard_del popupv2" rel="exModalDelCard"></a></li>
-				<li class="cls"><a href="#" class="ddcard_name">Очень длинное название карты 2550</a><a href="#" class="ddcard_del popupv2" rel="exModalDelCard"></a></li>
+				<li class="cls"><a href="#" class="ddcard_name">Очень длинное имя получателя перевода</a><a href="#" class="ddcard_del popupv2" rel="exModalDelName"></a></li>
+				<li class="cls"><a href="#" class="ddcard_name">Очень длинное имя</a><a href="#" class="ddcard_del popupv2" rel="exModalDelName"></a></li>
 			</ul>
-		   </div> 
+		    </div> 
 		</div>
-		<form>
-		<div class="card_block_othercard1">		   
-		   <div class="card_field_title">Номер карты</div>
-		   <div class="card_number_field"><input name="number" type="text" value="" class="inputform_gray" maxlength="20"></div>
-		   <div class="card_data_field">
-		      <div class="card_field_title">Срок действия</div>
-			  <div><input name="MM" type="text" value="" class="inputform_gray fieldmonthyear" placeholder="ММ"> <input name="YY" type="text" value="" class="inputform_gray fieldmonthyear" placeholder="ГГ"></div>
-		   </div>
-		</div>	
-		<div class="card_block_othercard2">		   
-		   <div class="card_field_title">CW/CVC2</div>
-		   <div class="card_cvv_field"><input name="cvv" type="text" value="" class="inputform_gray" maxlength="3"></div>
-		</div>	
-
-		<div class="clearfix"></div>
+		
+		<form>		
+		<div class="perevod_input_field">
+				<input type="text" class="inputform perevod_input" value="+7 (495) 589-46-91" name="name" >
+		</div>		
 		
 			<div class="cls summablock mt15">
 				<div class="form_input_area"><input type="text" class="inputform_gray summa1" value="0" name="sum1" ><input type="text" class="inputform_gray summa2" value="00" name="sum2" maxlength=2> <div class="curr_label">РУБ</div></div>				
@@ -112,17 +101,15 @@
 			</div>	
 			
 			<div class="cls savecardblock">
-				<div class="left savecardblock_td1"></div>
+				<div class="left savecardblock_td1"><label><input type="checkbox" name="remember" class="custom savecardlink" value="1" > Сохранить получателя</label></div>
 				<div class="left savecardblock_td2"><input type="submit" name="balance" class="button" value="Пополнить"></div>
-			</div>	
-			
-
-		
+			</div>			
 		</form>
+		
 	</div>
  </div>
 </div> 
-</div> 
+</div> <div class="clearfix"></div>
 
 <div class="container_12 ">
 <div class="grid_12">
@@ -135,7 +122,7 @@
 
 <div class="container_12 ">
 <div class="grid_12">
- <div class="operation_table  operation_table_withfooter ">
+ <div class="operation_table">
     
 	<div class="cls otable_caption">
 	  <div class="otable_caption_col1">Последние переводы</div>
@@ -199,7 +186,34 @@
 	  <div class="ot_col3">1 000.00</div>
 	  <div class="ot_col4">12.00</div>
 	  <div class="ot_col5">Перевод на карту 3339***8451</div>
-	  <div class="ot_col6"><span class="fail">Отказ</span></div>
+	  <div class="ot_col6"><span class="success">Выполено</span></div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col1">145852</div>
+	  <div class="ot_col2">15.04.2015</div>
+	  <div class="ot_col3">1 200.00</div>
+	  <div class="ot_col4">12.00</div>
+	  <div class="ot_col5">Перевод на карту 0120***0152</div>
+	  <div class="ot_col6"><span class="success">Выполено</span></div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col1">145852</div>
+	  <div class="ot_col2">20.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col4">12.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***0152</div>
+	  <div class="ot_col6"><span class="success">Выполено</span></div>
+	</div>	
+	
+	<div class="cls otable_td">
+	  <div class="ot_col1">145852</div>
+	  <div class="ot_col2">17.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col4">12.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***8451</div>
+	  <div class="ot_col6"><span class="success">Выполено</span></div>
 	</div>	
 
 	<div class="cls otable_td">
@@ -211,8 +225,11 @@
 	  <div class="ot_col6"><span class="success">Выполено</span></div>
 	</div>		
 	
+	
+	
  </div>
 </div> 
+<div class="clearfix"></div>
 
 <div class="grid_12">
  <div class="operation_table_pagination cls">
@@ -225,12 +242,8 @@
 		<div id="pages">
 		    <a class="page_previous_link" href="#"></a>
 			  <a class="page" href="#">1</a>
-			  <span class="currentpage ditto_page_2">2</span>
+			  <span class="currentpage">2</span>
 			  <a class="page" href="#">3</a>
-			  <a class="page" href="#">4</a>
-			  <a class="page" href="#">...</a>
-			  <a class="page" href="#">11</a>
-			  <a class="page" href="#">12</a>
 			<a class="page_next_link" href="#"></a>
 	    </div>
 	 </div>
@@ -241,7 +254,7 @@
 </div> 
 <div class="clearfix"></div>
 
-</div>
+</div> 
   
 </section><!-- #content-->
 
@@ -393,15 +406,16 @@
 </div>
 
 
-<!-- modal for select card -->
+
+<!-- modal for select name -->
 
 
 <div class="hide">
-    <div class="box-modal popupboxv5" id="exModalSaveCard">
+    <div class="box-modal popupboxv5" id="exModalSaveName">
 
  <div class="popupblock">
      <a href="#" class="closepopbut arcticmodal-close"></a>	
-       <div class="popupblock_caption">Название карты</div>
+       <div class="popupblock_caption">Имя получателя</div>
 	   <div class="popupblock_info popup_enterform">
 		   
 		   <div class="center">
@@ -420,12 +434,12 @@
 
 
 <div class="hide">
-    <div class="box-modal popupboxv5" id="exModalDelCard">
+    <div class="box-modal popupboxv5" id="exModalDelName">
 
  <div class="popupblock">
      <a href="#" class="closepopbut arcticmodal-close"></a>	
-       <div class="popupblock_caption">Подтверждение удаления карты?<br>
-	       <div class="center popup_smalltext mb15 popup_card_name">Название карты</div>
+       <div class="popupblock_caption">Подтверждение удаления?<br>
+	       <div class="center popup_smalltext mb15 popup_card_name">Имя получателя</div>
 	   </div>
 	   <div class="popupblock_info popup_enterform">
 		   
@@ -443,18 +457,18 @@
 
 
 <div class="hide">
-    <div class="box-modal popupboxv5" id="exModalRenameCard">
+    <div class="box-modal popupboxv5" id="exModalRenameName">
 
  <div class="popupblock">
      <a href="#" class="closepopbut arcticmodal-close"></a>	
-       <div class="popupblock_caption">Переименовать карту<br>
-	       <div class="center popup_smalltext mb15 popup_card_name">Название карты</div>
+       <div class="popupblock_caption">Переименовать получателя<br>
+	       <div class="center popup_smalltext mb15 popup_card_name">Имя получателя</div>
 	   </div>
 	   <div class="popupblock_info popup_enterform">
 		   
 		   <div class="center">
 		   <form>
-				<div class="cls"><input name="login" type="text" value="" class="inputform_gray big_field" placeholder="Новое название">
+				<div class="cls"><input name="login" type="text" value="" class="inputform_gray big_field" placeholder="Новое имя">
 				  <div class="mt15"><input type="submit" name="savecard" value="Сохранить" class="button standart_center_but"></div>	
 				</div>
 		   </form>
@@ -508,16 +522,14 @@ $(".custom").uniform();
 		max: false     
     });
   
-  $(".savecardlink").on("change", function(){
+  $(".savenamelink").on("change", function(){
     if ($(this).prop("checked"))  
-	$("#exModalSaveCard").arcticmodal();
-
+	$("#exModalSaveName").arcticmodal();
   });
-  
   
   $(".ddcard_del ").click(function(){
       $('.wrapper_dropdown').removeClass('active');  //вырубить все сначала
-  });
+  });  
   
 });
 </script>

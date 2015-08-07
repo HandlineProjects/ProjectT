@@ -544,8 +544,63 @@ body {
 .mfa_table_td6 {	width: 300px; }
 .mfa_table_td7 {	width: 100px; }
 
+.mainsearch_form_autocomplete_wrap {
+   width: 627px;
+}
+.mainsearch_form.search_in_table .inputform_gray {
+  width: 886px; 
+}
 
+.otable_caption {
+    font-size: 14px;
+    padding: 16px 20px;
+}
 
+.otable_caption_col1 {
+	padding-top: 7px;
+	width: 180px;
+}
+.otable_caption_col2 {
+	float: left;
+	width: 360px;
+}
+.otable_caption_col3 {
+	float: right; 
+	padding-top: 7px;
+}
+
+.otable_caption_col3 a {
+    padding-left: 10px;
+}
+
+.ot_col1 {
+	float: left;
+	width: 100px;
+}
+.ot_col2 {
+	float: left;
+	width: 100px;	
+}
+.ot_col3 {
+	float: left;
+	width: 130px;	
+}
+.ot_col4 {
+	float: left;
+	width: 130px;
+}
+.ot_col5 {
+	float: left;
+	width: 320px;	
+}
+.ot_col6 {
+	float: left;
+	width: 100px;	
+}
+
+.mytemplate_list_item {
+    width: 157px;
+}
 
 /*                  RETINA                     */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

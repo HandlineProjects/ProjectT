@@ -1185,7 +1185,8 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	margin-top: 30px;
 }
 
-.cabinet_form_search .inputform_gray {
+.cabinet_form_search .inputform_gray,
+.mainsearch_form.search_in_table .inputform_gray {
 	float: left;
 	width: 836px;
 	background-image: url('../images/lksee.png');
@@ -1198,6 +1199,10 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 		overflow: hidden;	
 		border: 1px solid #d7d7cb;
 }
+.mainsearch_form.search_in_table .inputform_gray {
+  width: 1126px;
+  margin-bottom: 10px;
+}
 .cabinet_form_search .inputform_gray:focus {
 	border: 1px solid #d10059; 
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
@@ -1205,6 +1210,13 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	box-shadow: 0 0 10px rgba(0,0,0,.15);	
 	padding-right: 60px;
 	width: 783px;
+}
+
+.mainsearch_form.search_in_table .inputform_gray:focus {
+	border: 1px solid #d10059; 
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.15);
+	box-shadow: 0 0 10px rgba(0,0,0,.15);	
 }
 
 .cabinet_form_search_submit {
@@ -1265,6 +1277,39 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
     top: 50%;
     width: 100%;
 }
+
+
+.mainsearch_form_autocomplete_wrap {
+	position: relative;
+   width: 868px;
+}
+.mainsearch_form_autocomplete2 {   
+   position: absolute;	
+	border: 1px solid #e40062;	
+	background-color: white;	
+	padding: 14px 20px 14px 0;
+	width: 100%;
+	top: 46px;
+	left: 0;
+	z-index: 999;
+	box-shadow: 0 5px 10px rgba(0,0,0,.15);
+	display: none;
+}
+.mainsearch_form_autocomplete2 a {
+	display: block;
+	background-image: url('../images/arr6.png');
+	background-position: 20px center;	
+	background-repeat: no-repeat;
+	background-size: 14px 12px; 	
+	font-size: 16px;
+	color: black;
+	font-family: 'FedraSansPro-BookLF';	
+	padding: 10px 0px 10px 50px  ;
+}
+.mainsearch_form_autocomplete2 a:hover {
+	color: #d10059;
+}
+
 
 
 .mainsearch_form_result {
@@ -2066,15 +2111,34 @@ a.ddcard_edit_tool {
 
 .ot_col1 {
 	float: left;
-	width: 253px;
+	width: 100px;
 }
 .ot_col2 {
 	float: left;
-	width: 180px;	
+	width: 120px;	
 }
 .ot_col3 {
 	float: left;
-	width: 300px;	
+	width: 150px;	
+}
+.ot_col4 {
+	float: left;
+	width: 150px;
+}
+.ot_col5 {
+	float: left;
+	width: 500px;	
+}
+.ot_col6 {
+	float: left;
+	width: 100px;	
+}
+
+.otable_td span.success {
+	color: green;
+}
+.otable_td span.fail {
+	color: #d10059;
 }
 
 .otable_td {
@@ -3154,7 +3218,8 @@ background-color:#face65}
     width: 230px;
 }
 
-.perevod_page .operation_table {
+.perevod_page .operation_table,
+.operation_table_withfooter {
 	margin-bottom: 20px;
 }
 
@@ -3169,7 +3234,7 @@ background-color:#face65}
 	float: left; width: 200px; padding-top:  3px;
 }
 .operation_table_pagination_col2 {
-	float: left; width: 720px;
+	float: left; width: 720px; text-align: center;
 }
 .operation_table_pagination_col3 {
 	float: right; width: 200px;
@@ -3181,21 +3246,20 @@ background-color:#face65}
 }
 
 #pages {
-  width: 400px;
-  margin: 0 auto;
+  /*width: 400px;*/
+  margin: 7px auto 0;
 }
 #pages a {
-    display: block;
-    float: left;
+    display: inline;    
     font-size: 18px;
     color: #d10059;
     text-decoration: none;
 }
 .currentpage {
     background-color: #70006b;
-    color: White;
-    display: block;
-    float: left;
+    color: White;    
+    display: inline;
+    /*float: left;*/
     font-size: 18px;
     font-weight: bold;
     margin-right: 2px;
