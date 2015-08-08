@@ -394,12 +394,7 @@ body {
     width: 182px;
 }
 
-.cabinet_form_search .inputform_gray {    
-    width: 595px;
-}
-.cabinet_form_search .inputform_gray:focus {
-	width: 542px;
-}
+
 
 
 
@@ -544,8 +539,24 @@ body {
 .mfa_table_td6 {	width: 300px; }
 .mfa_table_td7 {	width: 100px; }
 
+
+
+.cabinet_form_search .inputform_gray {    
+    width: 595px;
+}
+.cabinet_form_search .inputform_gray:focus {
+	width: 542px;
+}
+
 .mainsearch_form_autocomplete_wrap {
-   width: 627px;
+   width: 649px;
+}
+.mainsearch_form_autocomplete2 {      
+	width: 647px;
+}	
+.mainsearch_form_autocomplete_wrap .inputform_gray {
+	margin: 0;
+	width: 595px;
 }
 .mainsearch_form.search_in_table .inputform_gray {
   width: 886px; 
