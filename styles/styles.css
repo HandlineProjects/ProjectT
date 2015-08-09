@@ -1199,7 +1199,8 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 		overflow: hidden;	
 		border: 1px solid #d7d7cb;
 }
-.mainsearch_form.search_in_table .inputform_gray {
+.mainsearch_form.search_in_table .inputform_gray,
+.mainsearch_form.search_in_treking .inputform_gray {
   width: 1126px;
   margin-bottom: 10px;
 }
@@ -1235,10 +1236,36 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	cursor: pointer;
 }
 
+.mainsearch_form.search_in_treking .cabinet_form_search_submit {
+	background-image: none;
+	width: 150px;
+	font-size: 16px;
+	color:  #d10059;
+	font-family: 'FedraSansPro-DemiLF';
+	margin-left: -160px;
+}
+.mainsearch_form.search_in_treking .cabinet_form_search_submit:hover {
+	color: white;
+}
+.mainsearch_form.search_in_treking .inputform_gray:focus {
+	border: 1px solid #d10059; 
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.15);
+	box-shadow: 0 0 10px rgba(0,0,0,.15);
+	width: 1073px;	
+}
 
-
+.cabinet_form_search_intro {
+	margin: 80px auto;
+	text-align: center;
+	width: 470px;
+}
+.cabinet_form_search_intro h2 {
+	font-size:24px;
+	margin-bottom: 12px; 
+}
 .mainsearch_form_autocomplete {
-   margin: 27px 0 0px;
+   margin: 0px 0 20px;
    padding: 14px 0 45px;
    position: relative;
 	border-top: solid 1px #d1d1c7;
@@ -1342,6 +1369,10 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 	color: #d10059;
 }
 
+.pay_list.result_search {
+	margin-top: 30px;
+}
+
 .cabinet_form_search_submit:hover {
 	background-color: #d10059;
 	background-image: url('../images/arr5a.png');
@@ -1351,7 +1382,7 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 }
 
 .mainsearch_form_result {
-   margin: 27px 0 0px;
+   margin: 0px 0 40px;
    padding: 14px 0 45px;
    position: relative;
 	border-top: solid 1px #d1d1c7;

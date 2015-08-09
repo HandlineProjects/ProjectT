@@ -558,8 +558,13 @@ body {
 	margin: 0;
 	width: 595px;
 }
-.mainsearch_form.search_in_table .inputform_gray {
+.mainsearch_form.search_in_table .inputform_gray,
+.mainsearch_form.search_in_treking .inputform_gray {
   width: 886px; 
+}
+
+.mainsearch_form.search_in_treking .inputform_gray:focus {
+	width: 833px;
 }
 
 .otable_caption {
