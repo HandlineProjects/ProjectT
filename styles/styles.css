@@ -1371,6 +1371,7 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 
 .pay_list.result_search {
 	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .cabinet_form_search_submit:hover {
