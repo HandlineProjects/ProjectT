@@ -69,62 +69,14 @@
 <div class="grid_12">
  <div class="cabinet_form_search cls">
      <form class="mainsearch_form search_in_treking">
-	    <input type="text" class="inputform_gray mainsearch_text" value="1245784" name="search" placeholder="Найти платеж или перевод">
+	    <input type="text" class="inputform_gray mainsearch_text" value="" name="search" placeholder="Найти платеж или перевод">
 		<input type="submit" name="go" class="cabinet_form_search_submit mainsearch_submit" value="Проверить">
 	 </form> 
  </div>
 </div> 
 </div><div class="clearfix"></div>
 
-<div class="mainsearch_form_autocomplete">
-  <div class="mfa_table_th">
-		<div class="container_12 ">
-			<div class="grid_12">				
-			    <div class="mfa_table_td1 left">№ перевода</div>
-				<div class="mfa_table_td2 left">Вид</div>
-				<div class="mfa_table_td3 left">Дата</div>
-				<div class="mfa_table_td4 left">Сумма</div>
-				<div class="mfa_table_td5 left">Комиссия</div>
-				<div class="mfa_table_td6 left">Операция</div>
-				<div class="mfa_table_td7 left">Статус</div>				
-			</div>
-		</div><div class="clearfix"></div>
-  </div>
 
-  <div class="mfa_table_tr">
-    <a href="#">
-		<div class="container_12 ">
-			<div class="grid_12">							    
-				<div class="mfa_table_td1 left">75493320001660395202</div>
-				<div class="mfa_table_td2 left">Платеж</div>
-				<div class="mfa_table_td3 left">24.07.2015</div>
-				<div class="mfa_table_td4 left">1 000.00 руб</div>
-				<div class="mfa_table_td5 left">2.00 руб</div>
-				<div class="mfa_table_td6 left">Перевод на карту 3269***2144</div>
-				<div class="mfa_table_td7 left">Получено</div>								
-			</div>
-		</div><div class="clearfix"></div>
-	</a>	
-  </div>  
-  
-  <div class="mfa_table_tr">
-    <a href="#">
-		<div class="container_12 ">
-			<div class="grid_12">							    
-				<div class="mfa_table_td1 left">75493320001660395202</div>
-				<div class="mfa_table_td2 left">Платеж</div>
-				<div class="mfa_table_td3 left">24.07.2015</div>
-				<div class="mfa_table_td4 left">2 000.00 руб</div>
-				<div class="mfa_table_td5 left">2.00 руб</div>
-				<div class="mfa_table_td6 left">Перевод на карту 3269***2144</div>
-				<div class="mfa_table_td7 left">Получено</div>								
-			</div>
-		</div><div class="clearfix"></div>
-	</a>	
-  </div>  
-
- 
-</div>
 
 
 <div class="container_12 ">
@@ -392,25 +344,14 @@ $(document).ready(function() {
   });
 
   
-  $('.mainsearch_text').on({
-  focus: function(){
-	$('.mainsearch_form_autocomplete').show();  
-  },
-  blur: function() {
-	$('.mainsearch_form_autocomplete').hide();  
-  }
-  });
   
   /*проверка поля на символы для вывода submit кнопки (интервал можно менять) */  
   setInterval(function() { 
 	if ( $('.mainsearch_text').val() != '' )	$('.mainsearch_submit').show();  
-	else { $('.mainsearch_submit').hide();  $('.mainsearch_form_result').hide();  }
+	else { $('.mainsearch_submit').hide();   }
   }, 1000);
   
-  $('.mainsearch_form_result_close').on('click', function(){
-  	$('.mainsearch_form_result').hide(); 
-  	return false;
-  });
+
   
 
  
