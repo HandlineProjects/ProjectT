@@ -1479,12 +1479,12 @@ ul.cabinet_mainmenu li.exit a:hover,ul.cabinet_mainmenu li.exit.active {
 
 
 
-.mfa_table_td1 {	width: 110px; padding-left: 10px; }
+.mfa_table_td1 {	width: 180px; padding-left: 10px; }
 .mfa_table_td2 {	width: 96px; }
 .mfa_table_td3 {	width: 96px; }
 .mfa_table_td4 {	width: 125px; }
 .mfa_table_td5 {	width: 135px; }
-.mfa_table_td6 {	width: 368px; }
+.mfa_table_td6 {	width: 290px; }
 .mfa_table_td7 {	width: 120px; }
 
 
