@@ -847,7 +847,7 @@ footer .footer_phone {
 
 
 .middle_enter_form form {
-	width: 400px;
+	width: 480px;
 	margin: 44px auto 20px;
 	
 }
@@ -860,7 +860,7 @@ footer .footer_phone {
 	padding: 8px 8px 7px 28px;	
 	font-size: 18px;
 	color: #af0062;
-	width: 118px;
+	width: 200px;
 }
 .middle_enter_form .submitform {
 	float: left;
