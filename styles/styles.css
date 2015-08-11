@@ -717,10 +717,10 @@ footer .footer_phone {
 	display: block;
 }
 .header_enter_form .inputform {
-	background-image: url('../images/7.png');
+	/*background-image: url('../images/7.png');
 	background-position: 5px center;
 	background-repeat: no-repeat;
-	background-size: 19px 13px;
+	background-size: 19px 13px;*/
 	padding: 2px 8px 2px 25px;	
 	font-size: 18px;
 	color: #757575;
@@ -847,23 +847,24 @@ footer .footer_phone {
 
 
 .middle_enter_form form {
-	width: 380px;
+	width: 400px;
 	margin: 44px auto 20px;
+	
 }
 .middle_enter_form .inputform {
 	float: left;
-	background-image: url('../images/7c.png');
+	/*background-image: url('../images/7c.png');
 	background-position: 5px center;
 	background-repeat: no-repeat;
-	background-size: 19px 13px;
+	background-size: 19px 13px;*/
 	padding: 8px 8px 7px 28px;	
 	font-size: 18px;
 	color: #af0062;
-	width: 168px;
+	width: 118px;
 }
 .middle_enter_form .submitform {
 	float: left;
-	width: 160px;
+	width: 240px;
 	height: 40px;
 	overflow: hidden;
 	padding-top: 11px;
@@ -884,6 +885,23 @@ footer .footer_phone {
 .middle_enter_form_link {
 	margin-top: 16px;
 	text-align: center;
+}
+.wrap_prefix7 {
+  position: relative;	
+}
+.prefix7 {
+	position: absolute;
+	left: 6px;
+	top: 9px;
+	font-size: 18px;
+	color: #af0062;
+}
+.header_enter_form .prefix7 {
+	font-size: 18px;
+	color: #757575;
+	left: 6px;
+	top: 3px;
+	
 }
 
 
