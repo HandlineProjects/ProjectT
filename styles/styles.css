@@ -325,6 +325,8 @@ footer .footer_phone {
 	color: #e4002d; 
 }
 
+
+
 .font2 {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -3759,3 +3761,31 @@ background-color:#face65}
 .topspoiler:hover {
 	color: white;
 }
+
+
+.stopmessageblock {
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'FedraSansPro-BookLF';
+	padding: 10px 0;
+	width: 680px;
+	margin: 0 auto;
+}
+.stopmessageblock h1 {	
+	font-size: 24px;
+	display: block;
+	width: 200px;
+	margin: 0 auto 20px auto;
+	padding: 20px;
+	border-bottom: 1px solid #70006b;
+	font-weight: bold;	
+}
+.stopmessageblock p span {
+	color: #8a8d8e;
+	font-size: 14px;
+	
+}
+
+
+
