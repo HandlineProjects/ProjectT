@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="styles/retina.css" />
 <link rel="stylesheet" href="styles/adaptfull.css" />
 
+<link rel="stylesheet" href="styles/classic.css" />
+<link rel="stylesheet" href="styles/classic.date.css" />
 
 </head>
 
@@ -372,6 +374,99 @@
  </div>
 </div> 
 </div> 
+
+
+
+
+<div class="container_12 ">
+<div class="grid_12">
+ <div class="operation_table operation_table_withfooter">
+    
+	<div class="cls otable_caption">
+	  <div class="otable_caption_col1">Последние переводы</div>
+	  <div class="otable_caption_col2">
+	     <div class="cls">
+	     <div class="otable_caption_data">с <input name="dd1" type="text" value="30.04.2015" class="inputform_gray datepicker_link"  readonly="" ></div>   
+		 <div class="otable_caption_data">по <input name="dd2" type="text" value="30.04.2015" class="inputform_gray datepicker_link" readonly="" ></div>   
+		 </div>
+	  </div>
+	  <div class="otable_caption_col3"><a href="#" class="active">Переводы</a>      <a href="#">Оплата</a>      <a href="#">Пополнение</a><a href="#">Все операции</a></div>
+	</div>
+	
+	<div class="cls otable_th">
+	  <div class="ot_col3"><a href="#" class="otable_th_filter_up">Дата</a></div>
+	  <div class="ot_col3"><a href="#" class="otable_th_filter_down">Сумма (руб)</a></div>
+	  <div class="ot_col3"><a href="#" class="otable_th_filter_down">Комиссия (руб)</a></div>
+	  <div class="ot_col5"><a href="#" class="otable_th_filter_down">Операция</a></div>
+	</div>
+
+	<div class="cls otable_td">
+	  <div class="ot_col3">20.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col3">10.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***0152</div>
+	</div>	
+	
+	<div class="cls otable_td">
+	  <div class="ot_col3">20.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col3">10.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***0152</div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col3">20.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col3">10.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***0152</div>
+	</div>	
+	
+	<div class="cls otable_td">
+	  <div class="ot_col3">20.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col3">10.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***0152</div>
+	</div>	
+
+	<div class="cls otable_td">
+	  <div class="ot_col3">20.04.2015</div>
+	  <div class="ot_col3">1 000.00</div>
+	  <div class="ot_col3">10.00</div>
+	  <div class="ot_col5">Перевод на карту 3339***0152</div>
+	</div>	
+	
+	
+ </div>
+</div> 
+<div class="clearfix"></div>
+
+<div class="grid_12">
+ <div class="operation_table_pagination cls">
+     
+	 <div class="operation_table_pagination_col1">
+	   <form>На странице: <select name="pagecount" class="custom pagecount"><option value="10">10</option><option value="20">20</option><option value="100">100</option></select></form>
+	 </div>
+	 
+	 <div class="operation_table_pagination_col2">
+		<div id="pages">
+		    <a class="page_previous_link" href="#"></a>
+			  <a class="page" href="#">1</a>
+			  <span class="currentpage">2</span>
+			  <a class="page" href="#">3</a>
+			<a class="page_next_link" href="#"></a>
+	    </div>
+	 </div>
+	 
+	 <div class="operation_table_pagination_col3">Скачать:   <a href="#">PDF</a>  <a href="#">XML</a></div>
+	 
+ </div> 
+</div> 
+<div class="clearfix"></div>
+
+</div> 
+
+
+
   
 </section><!-- #content-->
 
@@ -595,9 +690,9 @@
 
 
 <script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <script src="js/tools.js"></script>
+
 
 <script>
 var ADAPT_CONFIG = {
@@ -612,7 +707,9 @@ var ADAPT_CONFIG = {
 };
 </script>
 <script src="js/adapt.js"></script>
-
+<script src="js/picker.js"></script>
+<script src="js/picker.date.js"></script>
+<script src="js/jquery.uniform.js"></script> <!--  Добавляет кастомные виды для форм -->
 
 
 
@@ -627,6 +724,17 @@ $(document).ready(function() {
 	  return false;
   });
 
+  $(".custom").uniform(); 
+
+	$('.datepicker_link').pickadate({		
+		monthsFull: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+		weekdaysShort: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
+		firstDay: 1,
+		clear: '',
+		today: '',		
+		format: 'dd.mm.yyyy',
+		max: false     
+    });
   
   
 });
